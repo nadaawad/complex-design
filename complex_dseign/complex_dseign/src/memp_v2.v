@@ -1,7 +1,7 @@
 module memP_v2(clk, input_data, write_enable, input_read_address, input_write_address, memory_output,finish);
 	parameter number_of_clusters = 1;
 	parameter number_of_equations_per_cluster = 9;
-	parameter element_width = 32;
+	parameter element_width = 64;
 	parameter address_width = 20;
 	parameter memories_address_width=20; 
 	parameter no_of_units = 8 ;
@@ -23,7 +23,8 @@ module memP_v2(clk, input_data, write_enable, input_read_address, input_write_ad
 	
 	initial 
 		begin
-			$readmemh("p_v2.txt", mem);
+			//$readmemh("p_v2.txt", mem);
+			$readmemh("p_test.txt", mem);
 			finish<=0;
 		end
 	

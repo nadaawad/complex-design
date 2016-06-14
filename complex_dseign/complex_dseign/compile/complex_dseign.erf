@@ -36,16 +36,22 @@ UPDATEPROGRESS 32
 UPDATEPROGRESS 33
 UPDATEPROGRESS 34
 MESSAGE "Pass 2. Processing instantiations."
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol input_data has not been declared in module test_bench." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v" 35 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol write_enable has not been declared in module test_bench." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v" 35 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol input_write_address has not been declared in module test_bench." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v" 35 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol finish1 has not been declared in module test_bench." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v" 35 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol finish2 has not been declared in module test_bench." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v" 36 1
 UPDATEPROGRESS 36
 UPDATEPROGRESS 37
+UPDATEPROGRESS 38
 UPDATEPROGRESS 39
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol mXv1_finish has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 62 1
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryP_write_enable has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryR_write_enable has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryX_write_enable has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryP_write_enable_old has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 68 1
-MESSAGE_SP VCP2876 "Implicit net declaration, symbol finishP_v2 has not been declared in module top_module." "E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 71 1
 UPDATEPROGRESS 40
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol mXv1_finish has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 62 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryP_write_enable has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryR_write_enable has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryX_write_enable has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 65 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol memoryP_write_enable_old has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 68 1
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol finishP_v2 has not been declared in module top_module." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/top_module.v" 71 1
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
 UPDATEPROGRESS 46
@@ -54,13 +60,13 @@ UPDATEPROGRESS 50
 UPDATEPROGRESS 52
 UPDATEPROGRESS 54
 UPDATEPROGRESS 56
-UPDATEPROGRESS 58
-UPDATEPROGRESS 60
-UPDATEPROGRESS 62
-UPDATEPROGRESS 64
-UPDATEPROGRESS 66
+UPDATEPROGRESS 57
+UPDATEPROGRESS 59
+UPDATEPROGRESS 61
+UPDATEPROGRESS 63
+UPDATEPROGRESS 65
+UPDATEPROGRESS 67
 UPDATEPROGRESS 68
-UPDATEPROGRESS 70
 UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
@@ -84,8 +90,8 @@ UPDATEPROGRESS 96
 UPDATEPROGRESS 97
 UPDATEPROGRESS 98
 UPDATEPROGRESS 99
-MESSAGE "Unit top modules: tb."
-MESSAGE "$root top modules: tb."
+MESSAGE "Unit top modules: test_bench complex_division tb."
+MESSAGE "$root top modules: tb test_bench complex_division."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
 MESSAGE "done"

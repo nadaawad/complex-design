@@ -1,4 +1,4 @@
-810
+4452
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
@@ -41,6 +41,20 @@
 ~A 1 "./src/a_s.v" 17 a_s
 ~M 1 "./src/adder_subtractor.v" 25 adder_subtractor
 ~A 1 "./src/adder_subtractor.v" 25 adder_subtractor
+~M 1 "./src/complex_adder_subtractor.v" 23 complex_adder_subtractor
+~A 1 "./src/complex_adder_subtractor.v" 23 complex_adder_subtractor
+~M 1 "./src/complex_conjugate.v" 23 complex_conjugate
+~A 1 "./src/complex_conjugate.v" 23 complex_conjugate
+~M 3 "./src/complex_division.v" 23 complex_division
+~A 1 "./src/complex_division.v" 23 complex_division
+~M 1 "./src/complex_multiply.v" 23 complex_multiply
+~A 1 "./src/complex_multiply.v" 23 complex_multiply
+~M 1 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
+~A 1 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
+~M 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
+~A 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
+~M 1 "./src/complex_vXc_mul3_sub.v" 23 complex_vXc_mul3_sub
+~A 1 "./src/complex_vXc_mul3_sub.v" 23 complex_vXc_mul3_sub
 ~M 1 "./src/control_unit.v" 2 control_unit
 ~A 1 "./src/control_unit.v" 2 control_unit
 ~M 1 "./src/decoder.v" 25 decoder
@@ -75,6 +89,8 @@
 ~A 1 "./src/row_by_vector_module.v" 25 row_by_vector
 ~M 3 "./src/tb.v" 3 tb
 ~A 1 "./src/tb.v" 3 tb
+~M 3 "./src/test_bench.v" 23 test_bench
+~A 1 "./src/test_bench.v" 23 test_bench
 ~M 1 "./src/top_module.v" 3 top_module
 ~A 1 "./src/top_module.v" 3 top_module
 ~M 1 "./src/vxc_add_8.v" 1 vXc_add_8

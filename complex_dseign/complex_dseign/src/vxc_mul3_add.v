@@ -1,8 +1,8 @@
 module vXc_mul3_add(clk,reset,first_row_fixed,constant,second_row_fixed,op,finish,result_mem_we,vXc_add_8_output,read_again); 
 
-    parameter number_of_equations_per_cluster=16;
+    parameter number_of_equations_per_cluster=19;
 	parameter element_width_modified=34;
-	parameter element_width=32;
+	parameter element_width=64;
 	parameter no_of_units=8;
 	parameter count=number_of_equations_per_cluster/no_of_units;
 	parameter additional = no_of_units-(number_of_equations_per_cluster%no_of_units); 
@@ -10,7 +10,7 @@ module vXc_mul3_add(clk,reset,first_row_fixed,constant,second_row_fixed,op,finis
 	parameter number_of_clusters=1;
 	
 	
-	integer counter=0;
+	
 	integer counter2=0;
 	integer counter3=0;
 	integer counter5=0;
@@ -45,7 +45,7 @@ module vXc_mul3_add(clk,reset,first_row_fixed,constant,second_row_fixed,op,finis
 	
 	
 	
-	vXc_add_8_delay #(.NI(no_of_units)) vXv(clk,reset,first_row_input,constant,second_row_input,op, vXc_add_8_output,finish_out );
+	complex_vXc_add_8_delay #(.NI(no_of_units)) vXv(clk,reset,first_row_input,constant,second_row_input,op, vXc_add_8_output,finish_out );
 
 	initial
 		begin  
@@ -55,25 +55,7 @@ module vXc_mul3_add(clk,reset,first_row_fixed,constant,second_row_fixed,op,finis
 			read_again <=0;
 			end
 		
-		always @(posedge clk)
-		begin
-			if(reset)
-				begin
-				counter<=0;
-				
-				end
-				
-			else if(!reset)
-				begin
-					if (counter==0)
-						begin 
-							
-							//first_row_plus_additional[0] <= {vector1,{additional{32'b0}}};
-							//second_row_plus_additional[0] <= {vector2,{additional{32'b0}}};
-						end
-						counter <= counter+1;
-					end
-				end	
+		
 				
 				
 				always @ (posedge clk)

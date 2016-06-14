@@ -23,14 +23,18 @@
 //   and may be overwritten
 //{module {delay}}
 
-	
-	module delay (clk,in,out);
+	  
+	module delay (clk,in,out); 
+		
+		parameter element_width=64; 
+		
+		
      input clk;
 	 input in;
      wire clk;
-     wire[31:0]in;
+     wire[element_width-1:0]in;
     output out;
-    reg [31:0]out;
+    reg [element_width-1:0]out;
 	
  // test test test
 	

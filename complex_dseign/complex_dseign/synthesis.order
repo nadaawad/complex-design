@@ -42,3 +42,10 @@ i<>.\src\vxc_add_8.v
 i<>.\src\vXc_add_8_delay.v
 i<>.\src\vxc_mul3_add.v
 i<>.\src\vxc_mul3_sub.v
+i<>.\src\complex_adder_subtractor.v
+i<>.\src\test_bench.v
+i<>.\src\complex_multiply.v
+i<>.\src\complex_conjugate.v
+i<>.\src\complex_division.v
+i<>.\src\complex_vXc_add_8.v
+i<>.\src\complex_vXc_add_8_delay.v

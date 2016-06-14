@@ -1,11 +1,13 @@
-"./src/vxc_mul3_add.v"	1
-"./src/intadder_33_f300_uid23.v"	1
+"./src/complex_division.v"	1
 "./src/memp_v2.v"	1
+"./src/intadder_33_f300_uid23.v"	1
+"./src/vxc_mul3_add.v"	1
 "./src/delay.v"	1
 "./src/div_nr_wsticky.v"	1
 "./src/top_module.v"	1
 "./src/vectorxvector.v"	1
 "./src/control_unit.v"	1
+"./src/complex_adder_subtractor.v"	1
 "./src/main_alu.v"	1
 "./src/outputieee_8_23_to_8_23.v"	1
 "./src/intmultiplier_usingdsp_24_24_48_unsigned_uid4.v"	1
@@ -13,8 +15,9 @@
 "./src/decoder.v"	1
 "./src/8x8_adder.v"	1
 "./src/multiply.v"	1
-"./src/adder_subtractor.v"	1
 "./src/vxc_add_8.v"	1
+"./src/adder_subtractor.v"	1
+"./src/complex_multiply.v"	1
 "./src/memx.v"	1
 "./src/rkold_prev.v"	1
 "./src/memp.v"	1
@@ -28,10 +31,13 @@
 "./src/vXc_add_8_delay.v"	1
 "./src/fpaddsub_8_23_uid2_rightshifter.v"	1
 "./src/fpmultiplier_8_23_8_23_8_23_uid2.v"	1
+"./src/complex_vXc_add_8.v"	1
 "./src/intadder_34_f180_uid18.v"	1
 "./src/tb.v"	1
 "./src/intadder_27_f180_uid7.v"	1
 "./src/fpaddsub_8_23_uid2.v"	1
+"./src/complex_conjugate.v"	1
+"./src/complex_vXc_add_8_delay.v"	1
 "./src/intadder_42_f300_uid15.v"	1
 "./src/vxc_mul3_sub.v"	1
 "./src/mema.v"	1
@@ -42,3 +48,4 @@
 "./src/inputieee_8_23_to_8_23.v"	1
 "./src/8_organizer.v"	1
 "./src/row_by_vector_module.v"	1
+"./src/test_bench.v"	1
