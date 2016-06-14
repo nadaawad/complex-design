@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+complex_dseign=.\complex_dseign\complex_dseign.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+complex_dseign=1
