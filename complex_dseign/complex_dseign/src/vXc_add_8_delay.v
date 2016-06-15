@@ -1,10 +1,10 @@
 module vXc_add_8_delay(clk,reset ,first_row_input,constant,second_row_input,op, result,finish );
 	
-	parameter NOE = 16;
+	parameter NOE = 19;
 	parameter NI = 8;
 	parameter additional = NI-(NOE%NI); 
 	parameter total = NOE+additional ;
-	parameter element_width=32;
+	parameter element_width=64;
 	integer counter ;
 	integer ii=0;
 	
@@ -30,8 +30,8 @@ module vXc_add_8_delay(clk,reset ,first_row_input,constant,second_row_input,op, 
 	
 	for(j=0;j<NI;j=j+1) 
 		begin : instantiate_Multiplier
-			multiply m (first_row_input[element_width*(NI-j)-1-:element_width],constant, clk, 1, mul_result[element_width*(NI-j)-1-:element_width]);
-			delay d(clk,second_row_input[element_width*(NI-j)-1:element_width*(NI-j)-32],adder_input[j]);
+			multiply m1 (first_row_input[element_width*(NI-j)-1-:element_width],constant, clk, 1, mul_result[element_width*(NI-j)-1-:element_width]);
+			delay d(clk,second_row_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width],adder_input[j]);
 			adder_subtractor adder(adder_input[j],mul_result[element_width*(NI-j)-1:element_width*(NI-j)-element_width] ,result[element_width*(NI-j)-1:element_width*(NI-j)-element_width],op,clk,1'b1);
 		end	
 		endgenerate
@@ -50,7 +50,7 @@ module vXc_add_8_delay(clk,reset ,first_row_input,constant,second_row_input,op, 
 									begin
 										if(op==0)
 											begin
-												if(counter==4)
+												if(counter==8)
 													begin
 														finish<=1;
 														counter<=0;
@@ -63,7 +63,7 @@ module vXc_add_8_delay(clk,reset ,first_row_input,constant,second_row_input,op, 
 												
 												else if(op==1)
 													begin
-														if(counter==4)
+														if(counter==8)
 															begin
 																finish<=1;
 																counter<=0;

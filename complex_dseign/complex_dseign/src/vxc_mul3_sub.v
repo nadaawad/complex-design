@@ -42,7 +42,7 @@ module vXc_mul3_sub(clk,reset,first_row_plus_additional,constant,second_row_plus
 	wire finish_out;
 	
 	
-	complex_vXc_add_8 #(.NI(no_of_units)) vXv(clk,reset,first_row_input,constant,second_row_input,op, vXc_add_8_output,finish_out );
+	complex_vXc_add_8_delay #(.NI(no_of_units)) vXv(clk,reset,first_row_input,constant,second_row_input,op, vXc_add_8_output,finish_out );
 
 	initial
 		
@@ -55,20 +55,7 @@ module vXc_mul3_sub(clk,reset,first_row_plus_additional,constant,second_row_plus
 		end
 		
 		
-		always @(posedge clk)
-		begin
-			if(reset)
-				begin
-				counter<=0;
-					 
-				end
-				
-			else if(!reset)
-				begin
-					
-						counter <= counter+1;
-					end
-				end
+		
 				
 				always @ (posedge clk)
 					begin
@@ -79,11 +66,14 @@ module vXc_mul3_sub(clk,reset,first_row_plus_additional,constant,second_row_plus
 								if(counter2 <total/no_of_units)
 									begin
 										if(counter2==0)
+											begin
 											first_row_input <= first_row_plus_additional;
+											//@(posedge clk);
+											end
 										else
 											begin
-										@(posedge clk);
-										@(posedge clk);
+										//@(posedge clk);
+										//@(posedge clk);
 										first_row_input <= first_row_plus_additional;
 										end
 										counter2 <=counter2+1;
@@ -101,14 +91,15 @@ module vXc_mul3_sub(clk,reset,first_row_plus_additional,constant,second_row_plus
 												begin  
 													if(counter5==0)
 														begin
-															@(posedge clk);
-															@(posedge clk);
+															//@(posedge clk);
+															//@(posedge clk);
 															second_row_input <= second_row_plus_additional;
+															//@(posedge clk);
 														end
 													else
 														begin
-															 @(posedge clk);
-															 @(posedge clk);
+															// @(posedge clk);
+															// @(posedge clk);
 															second_row_input <= second_row_plus_additional;
 														end
 														counter5 <=counter5+1;
@@ -129,18 +120,34 @@ module vXc_mul3_sub(clk,reset,first_row_plus_additional,constant,second_row_plus
 																
 																if(counter3<total/no_of_units)
 																	begin 
+																		if(counter3==0)
+																			begin  
 																		
-																			
-																		@(posedge clk);
+																		@(posedge clk);	
 																		result_mem_we<=1;
 																		@(posedge clk);	
-																		result_mem_we<=0;
+																		
+																		end
+																		else
+																			result_mem_we<=1;	 
+																		//@(posedge clk);	
+																			//result_mem_we<=0;
 									
 																		counter3<=counter3+1;
+																		if(counter3>=total/no_of_units-1)
+																			begin
+																				finish<=1; 
+																	           result_mem_we<=0;
+																			end
 																	end
-																else 
-																	finish<=1;
-																end
+																//else 
+//																	begin
+//																	finish<=1; 
+//																	result_mem_we<=0;
+//																	end
+//																	
+																	end					 
+																
 																end
 										
 									 

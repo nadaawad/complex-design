@@ -49,3 +49,13 @@ i<>.\src\complex_conjugate.v
 i<>.\src\complex_division.v
 i<>.\src\complex_vXc_add_8.v
 i<>.\src\complex_vXc_add_8_delay.v
+i<>.\src\test_bench2.v
+i<>.\src\8_dot_product _with_control.v
+i<>.\src\8_organizer_with_control.v
+i<>.\src\adder_subtractor_with_control.v
+i<>.\src\complex_eight_Dot_Product_Multiply_with_control.v
+i<>.\src\complex_EightxEight_Adder.v
+i<>.\src\complex_N_to_2N_demux.v
+i<>.\src\complex_TwoxOne_mux.v
+i<>.\src\complex_Eight_Organizer_with_control.v
+i<>.\src\complex_adder_subtractor_with_control.v

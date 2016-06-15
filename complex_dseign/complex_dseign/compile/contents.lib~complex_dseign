@@ -1,4 +1,4 @@
-4452
+15320
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
@@ -7,6 +7,8 @@
 ~A 1 "./src/alu.v" 2 Alu
 ~M 1 "./src/8_organizer.v" 2 Eight_Organizer
 ~A 1 "./src/8_organizer.v" 2 Eight_Organizer
+~M 1 "./src/8_organizer_with_control.v" 2 Eight_Organizer_with_control
+~A 1 "./src/8_organizer_with_control.v" 2 Eight_Organizer_with_control
 ~M 1 "./src/8x8_adder.v" 1 EightxEight_Adder
 ~A 1 "./src/8x8_adder.v" 1 EightxEight_Adder
 ~M 1 "./src/fpaddsub_8_23_uid2.v" 65 FPAddSub_8_23_uid2
@@ -41,15 +43,31 @@
 ~A 1 "./src/a_s.v" 17 a_s
 ~M 1 "./src/adder_subtractor.v" 25 adder_subtractor
 ~A 1 "./src/adder_subtractor.v" 25 adder_subtractor
+~M 1 "./src/adder_subtractor_with_control.v" 25 adder_subtractor_with_control
+~A 1 "./src/adder_subtractor_with_control.v" 25 adder_subtractor_with_control
+~M 1 "./src/complex_Eight_Organizer_with_control.v" 23 complex_Eight_Organizer_with_control
+~A 1 "./src/complex_Eight_Organizer_with_control.v" 23 complex_Eight_Organizer_with_control
+~M 1 "./src/complex_EightxEight_Adder.v" 23 complex_EightxEight_Adder
+~A 1 "./src/complex_EightxEight_Adder.v" 23 complex_EightxEight_Adder
+~M 1 "./src/complex_N_to_2N_demux.v" 24 complex_N_to_2N_demux
+~A 1 "./src/complex_N_to_2N_demux.v" 24 complex_N_to_2N_demux
+~M 3 "./src/complex_N_to_2N_demux.v" 24 complex_N_to_2N_demux_
+~A 1 "./src/complex_N_to_2N_demux.v" 24 complex_N_to_2N_demux_
+~M 1 "./src/complex_TwoxOne_mux.v" 25 complex_TwoxOne_mux
+~A 1 "./src/complex_TwoxOne_mux.v" 25 complex_TwoxOne_mux
 ~M 1 "./src/complex_adder_subtractor.v" 23 complex_adder_subtractor
 ~A 1 "./src/complex_adder_subtractor.v" 23 complex_adder_subtractor
+~M 1 "./src/complex_adder_subtractor_with_control.v" 23 complex_adder_subtractor_with_control
+~A 1 "./src/complex_adder_subtractor_with_control.v" 23 complex_adder_subtractor_with_control
 ~M 1 "./src/complex_conjugate.v" 23 complex_conjugate
 ~A 1 "./src/complex_conjugate.v" 23 complex_conjugate
 ~M 3 "./src/complex_division.v" 23 complex_division
 ~A 1 "./src/complex_division.v" 23 complex_division
+~M 1 "./src/complex_eight_Dot_Product_Multiply_with_control.v" 23 complex_eight_Dot_Product_Multiply_with_control
+~A 1 "./src/complex_eight_Dot_Product_Multiply_with_control.v" 23 complex_eight_Dot_Product_Multiply_with_control
 ~M 1 "./src/complex_multiply.v" 23 complex_multiply
 ~A 1 "./src/complex_multiply.v" 23 complex_multiply
-~M 1 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
+~M 3 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
 ~A 1 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
 ~M 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
 ~A 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
@@ -67,6 +85,8 @@
 ~A 1 "./src/division.v" 25 division
 ~M 1 "./src/8_dot_product.v" 2 eight_Dot_Product_Multiply
 ~A 1 "./src/8_dot_product.v" 2 eight_Dot_Product_Multiply
+~M 3 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
+~A 1 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
 ~M 1 "./src/main_alu.v" 2 main_alu
 ~A 1 "./src/main_alu.v" 2 main_alu
 ~M 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
@@ -91,11 +111,13 @@
 ~A 1 "./src/tb.v" 3 tb
 ~M 3 "./src/test_bench.v" 23 test_bench
 ~A 1 "./src/test_bench.v" 23 test_bench
+~M 3 "./src/test_bench2.v" 23 test_bench2
+~A 1 "./src/test_bench2.v" 23 test_bench2
 ~M 1 "./src/top_module.v" 3 top_module
 ~A 1 "./src/top_module.v" 3 top_module
-~M 1 "./src/vxc_add_8.v" 1 vXc_add_8
+~M 3 "./src/vxc_add_8.v" 1 vXc_add_8
 ~A 1 "./src/vxc_add_8.v" 1 vXc_add_8
-~M 1 "./src/vXc_add_8_delay.v" 1 vXc_add_8_delay
+~M 3 "./src/vXc_add_8_delay.v" 1 vXc_add_8_delay
 ~A 1 "./src/vXc_add_8_delay.v" 1 vXc_add_8_delay
 ~M 1 "./src/vxc_mul3_add.v" 1 vXc_mul3_add
 ~A 1 "./src/vxc_mul3_add.v" 1 vXc_mul3_add

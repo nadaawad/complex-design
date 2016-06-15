@@ -29,24 +29,32 @@
 		parameter element_width=64; 
 		
 		
-     input clk;
-	 input in;
-     wire clk;
-     wire[element_width-1:0]in;
-    output out;
-    reg [element_width-1:0]out;
+     input wire clk;
+	 input wire[element_width-1:0] in;
+      
+    
+    output reg [element_width-1:0]out;
+	
+	reg [element_width-1:0] pip1; 
+	reg [element_width-1:0] pip2;
+	reg [element_width-1:0] pip3;
+	reg [element_width-1:0] pip4;
+	reg [element_width-1:0] pip5;
+    
 	
  // test test test
 	
- always @(in)
-   	begin 
+ always @(posedge clk)
+	 begin 
        
-		@(posedge clk);	
-		@(posedge clk);	
-		
-	     out<=in; 
- 
-	end
+		pip1<=in;
+		pip2<=pip1;
+		pip3<=pip2;
+		pip4<=pip3;
+		pip5<=pip4;
+		out<=pip5;
+		 
+	 end
 	
 
 

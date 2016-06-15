@@ -31,14 +31,16 @@ module complex_multiply (A,B,clk,ce,result);
 	wire[31:0] A_real,A_imj,B_real,B_imj;
 	wire[31:0]result_real,result_imj;
 	
-	wire[31:0] r1Xr2,imj1ximj2,r1ximj2,r2ximj1;
+	wire[31:0] r1Xr2,imj1ximj2,r1ximj2,r2ximj1;	
+	
+	reg [31:0] pip1,pip2; 
 	
 	
 	assign A_real=A[63:32];
 	assign A_imj=A[31:0];
 	assign B_real=B[63:32];
 	assign B_imj=B[31:0];
-	assign result={result_real,result_imj};	   
+	assign result={result_real,pip2};	   
 	
 	multiply m1(A_real,B_real,clk,ce,r1Xr2);
 	multiply m2(A_imj,B_imj, clk, ce,imj1ximj2);
@@ -46,7 +48,14 @@ module complex_multiply (A,B,clk,ce,result);
 	multiply m4(A_imj, B_real, clk, ce,r2ximj1);
 	
 	adder_subtractor sub (r1Xr2,imj1ximj2,result_real,1'b1,clk,ce); 
-	adder_subtractor add (r1ximj2,r2ximj1,result_imj,1'b0,clk,ce);
+	adder_subtractor add (r1ximj2,r2ximj1,result_imj,1'b0,clk,ce);	
+	
+	always @(posedge clk)
+		begin
+			pip1<=result_imj;
+			pip2<=pip1;
+			
+		end
 
 
 endmodule

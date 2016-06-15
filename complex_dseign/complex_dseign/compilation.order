@@ -1,6 +1,6 @@
 .\src\test_bench.v
-.\src\complex_adder_subtractor.v
 .\src\complex_multiply.v
+.\src\complex_adder_subtractor.v
 .\src\complex_conjugate.v
 .\src\complex_division.v
 .\src\adder_subtractor.v
@@ -49,3 +49,13 @@
 .\src\top_module.v
 .\src\vectorxvector.v
 .\src\vectorxvector_mxv.v
+.\src\test_bench2.v
+.\src\8_dot_product _with_control.v
+.\src\8_organizer_with_control.v
+.\src\adder_subtractor_with_control.v
+.\src\complex_eight_Dot_Product_Multiply_with_control.v
+.\src\complex_EightxEight_Adder.v
+.\src\complex_N_to_2N_demux.v
+.\src\complex_TwoxOne_mux.v
+.\src\complex_Eight_Organizer_with_control.v
+.\src\complex_adder_subtractor_with_control.v
