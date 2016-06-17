@@ -23,8 +23,8 @@ module memP_v2(clk, input_data, write_enable, input_read_address, input_write_ad
 	
 	initial 
 		begin
-			//$readmemh("p_v2.txt", mem);
-			$readmemh("p_test.txt", mem);
+			$readmemh("p_v2.txt", mem);
+			//$readmemh("p_test.txt", mem);
 			finish<=0;
 		end
 	

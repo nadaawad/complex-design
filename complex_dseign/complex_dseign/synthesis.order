@@ -59,3 +59,13 @@ i<>.\src\complex_N_to_2N_demux.v
 i<>.\src\complex_TwoxOne_mux.v
 i<>.\src\complex_Eight_Organizer_with_control.v
 i<>.\src\complex_adder_subtractor_with_control.v
+i<>.\src\decoder_with_control.v
+i<>.\src\matrix_by_vector_v3_with_control.v
+i<>.\src\row_by_vector_with_control.v
+i<>.\src\vectorxvector_mxv_with_control.v
+i<>.\src\complex_row_by_vector_with_control.v
+i<>.\src\complex_decoder_with_control.v
+i<>.\src\complex_matrix_by_vector_v3_with_control.v
+i<>.\src\complex_vectorXvector_mXv_with_control.v
+i<>.\src\complex_Alu.v
+i<>.\src\complex_vectorXvector.v

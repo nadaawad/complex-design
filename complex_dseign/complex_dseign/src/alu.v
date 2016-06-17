@@ -1,5 +1,26 @@
-`define tolerance 32'h283424DC
-module Alu(clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xKold,rKold_prev,memoryP_input,memoryR_input,memoryX_input,mul_add3_finish,mXv1_finish,result_mem_we_4,rkold_read_address,result_mem_we_5,result_mem_counter_5,read_again,start,read_again_2,result_mem_we_6,vXv1_finish,finish_all);
+//-----------------------------------------------------------------------------
+//
+// Title       : complex_Alu
+// Design      : complex_dseign
+// Author      : Windows User
+// Company     : nada
+//
+//-----------------------------------------------------------------------------
+//
+// File        : complex_Alu.v
+// Generated   : Thu Jun 16 17:49:30 2016
+// From        : interface description file
+// By          : Itf2Vhdl ver. 1.22
+//
+//-----------------------------------------------------------------------------
+//
+// Description : 
+//
+//-----------------------------------------------------------------------------
+`timescale 1 ns / 1 ps
+
+ `define tolerance 32'h283424DC
+module Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xKold,rKold_prev,memoryP_input,memoryR_input,memoryX_input,mul_add3_finish,mXv1_finish,result_mem_we_4,rkold_read_address,result_mem_we_5,result_mem_counter_5,read_again,start,read_again_2,result_mem_we_6,vXv1_finish,finish_all);
 	
 	parameter number_of_equations_per_cluster=10;
 	parameter element_width_modified=34;
@@ -101,6 +122,7 @@ module Alu(clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xKold,rKold
 	//mat by vector (A*p)
 	matrix_by_vector_v3 #(.no_of_units(no_of_units/2),.NI(no_of_units),.number_of_clusters(number_of_clusters),.no_of_eqn_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
 	mXv1(clk,reset,reset_mXv1,matA,pKold,mXv1_result,mXv1_finish); //reset ykon finish memory P
+	
 	
 	//vect by vect p*(A*p)
 	
@@ -225,10 +247,6 @@ module Alu(clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xKold,rKold
 					
 				end	
 				end
-				
-		
-				
-			
-	
-endmodule 
 
+
+endmodule

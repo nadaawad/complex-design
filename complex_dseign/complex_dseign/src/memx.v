@@ -2,7 +2,7 @@ module memX(clk, input_data, write_enable, input_read_address, input_write_addre
 	
 	parameter number_of_clusters = 20;
     parameter number_of_equations_per_cluster = 9;
-    parameter element_width = 32;
+    parameter element_width = 64;
     parameter address_width =20;
     parameter memories_address_width=20;	
 	parameter no_of_units = 8;

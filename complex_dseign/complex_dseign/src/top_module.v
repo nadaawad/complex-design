@@ -4,7 +4,7 @@ module top_module(clk,reset,finish,reset_vXv1,reset_mXv1,halt);
 	
 	parameter number_of_clusters =1;
 	parameter number_of_equations_per_cluster =19;
-	parameter element_width = 32;
+	parameter element_width = 64;
 	parameter memories_address_width=20;// m7tag t3deel	
 	parameter no_of_units = 8;
 	

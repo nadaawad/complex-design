@@ -36,7 +36,7 @@ wire [63:0] four_to_seven_sum;
 
 //stage
  														   
-complex_adder_subtractor zero_one_adder  (inputs[63:0],   inputs[127:64], zero_one_sum, 1'b0,clk,1'b1);
+complex_adder_subtractor zero_one_adder  (inputs[63:0],inputs[127:64], zero_one_sum, 1'b0,clk,1'b1);
 												 		
 complex_adder_subtractor two_three_adder (inputs[191:128], inputs[255:192], two_three_sum, 1'b0,clk,1'b1);
 												 		 
@@ -47,6 +47,8 @@ complex_adder_subtractor six_seven_adder (inputs[447:384],inputs[511:448], six_s
 // stage
 complex_adder_subtractor zero_to_three_adder (zero_one_sum, two_three_sum, zero_to_three_sum, 1'b0,clk,1'b1);
 complex_adder_subtractor four_to_seven_adder (four_five_sum,six_seven_sum , four_to_seven_sum, 1'b0,clk,1'b1);
+
+
 //stage
 complex_adder_subtractor zero_to_six_adder (zero_to_three_sum, four_to_seven_sum, summation, 1'b0,clk,1'b1);
 

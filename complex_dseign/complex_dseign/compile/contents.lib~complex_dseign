@@ -1,10 +1,10 @@
-15320
+20408
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
 ~A 1 "./src/ap_total_mem.v" 1 AP_total
-~M 1 "./src/alu.v" 2 Alu
-~A 1 "./src/alu.v" 2 Alu
+~M 1 "./src/alu.v" 23 Alu
+~A 1 "./src/alu.v" 23 Alu
 ~M 1 "./src/8_organizer.v" 2 Eight_Organizer
 ~A 1 "./src/8_organizer.v" 2 Eight_Organizer
 ~M 1 "./src/8_organizer_with_control.v" 2 Eight_Organizer_with_control
@@ -45,6 +45,10 @@
 ~A 1 "./src/adder_subtractor.v" 25 adder_subtractor
 ~M 1 "./src/adder_subtractor_with_control.v" 25 adder_subtractor_with_control
 ~A 1 "./src/adder_subtractor_with_control.v" 25 adder_subtractor_with_control
+~M 1 "./src/complex_vectorXvector.v" 25 compelx_vectorXvector
+~A 1 "./src/complex_vectorXvector.v" 25 compelx_vectorXvector
+~M 1 "./src/complex_Alu.v" 23 complex_Alu
+~A 1 "./src/complex_Alu.v" 23 complex_Alu
 ~M 1 "./src/complex_Eight_Organizer_with_control.v" 23 complex_Eight_Organizer_with_control
 ~A 1 "./src/complex_Eight_Organizer_with_control.v" 23 complex_Eight_Organizer_with_control
 ~M 1 "./src/complex_EightxEight_Adder.v" 23 complex_EightxEight_Adder
@@ -61,22 +65,34 @@
 ~A 1 "./src/complex_adder_subtractor_with_control.v" 23 complex_adder_subtractor_with_control
 ~M 1 "./src/complex_conjugate.v" 23 complex_conjugate
 ~A 1 "./src/complex_conjugate.v" 23 complex_conjugate
-~M 3 "./src/complex_division.v" 23 complex_division
+~M 1 "./src/complex_decoder_with_control.v" 23 complex_decoder_with_control
+~A 1 "./src/complex_decoder_with_control.v" 23 complex_decoder_with_control
+~M 1 "./src/complex_division.v" 23 complex_division
 ~A 1 "./src/complex_division.v" 23 complex_division
 ~M 1 "./src/complex_eight_Dot_Product_Multiply_with_control.v" 23 complex_eight_Dot_Product_Multiply_with_control
 ~A 1 "./src/complex_eight_Dot_Product_Multiply_with_control.v" 23 complex_eight_Dot_Product_Multiply_with_control
+~M 1 "./src/complex_matrix_by_vector_v3_with_control.v" 24 complex_matrix_by_vector_v3_with_control
+~A 1 "./src/complex_matrix_by_vector_v3_with_control.v" 24 complex_matrix_by_vector_v3_with_control
 ~M 1 "./src/complex_multiply.v" 23 complex_multiply
 ~A 1 "./src/complex_multiply.v" 23 complex_multiply
+~M 1 "./src/complex_row_by_vector_with_control.v" 23 complex_row_by_vector_with_control
+~A 1 "./src/complex_row_by_vector_with_control.v" 23 complex_row_by_vector_with_control
 ~M 3 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
 ~A 1 "./src/complex_vXc_add_8.v" 23 complex_vXc_add_8
 ~M 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
 ~A 1 "./src/complex_vXc_add_8_delay.v" 23 complex_vXc_add_8_delay
 ~M 1 "./src/complex_vXc_mul3_sub.v" 23 complex_vXc_mul3_sub
 ~A 1 "./src/complex_vXc_mul3_sub.v" 23 complex_vXc_mul3_sub
+~M 1 "./src/complex_vectorXvector.v" 25 complex_vectorXvector
+~A 1 "./src/complex_vectorXvector.v" 25 complex_vectorXvector
+~M 1 "./src/complex_vectorXvector_mXv_with_control.v" 23 complex_vectorXvector_mXv_with_control
+~A 1 "./src/complex_vectorXvector_mXv_with_control.v" 23 complex_vectorXvector_mXv_with_control
 ~M 1 "./src/control_unit.v" 2 control_unit
 ~A 1 "./src/control_unit.v" 2 control_unit
 ~M 1 "./src/decoder.v" 25 decoder
 ~A 1 "./src/decoder.v" 25 decoder
+~M 1 "./src/decoder_with_control.v" 23 decoder_with_control
+~A 1 "./src/decoder_with_control.v" 23 decoder_with_control
 ~M 1 "./src/delay.v" 27 delay
 ~A 1 "./src/delay.v" 27 delay
 ~M 1 "./src/div_nr_wsticky.v" 17 div_nr_wsticky
@@ -85,12 +101,14 @@
 ~A 1 "./src/division.v" 25 division
 ~M 1 "./src/8_dot_product.v" 2 eight_Dot_Product_Multiply
 ~A 1 "./src/8_dot_product.v" 2 eight_Dot_Product_Multiply
-~M 3 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
+~M 1 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
 ~A 1 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
 ~M 1 "./src/main_alu.v" 2 main_alu
 ~A 1 "./src/main_alu.v" 2 main_alu
 ~M 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
 ~A 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
+~M 3 "./src/matrix_by_vector_v3_with_control.v" 27 matrix_by_vector_v3_with_control
+~A 1 "./src/matrix_by_vector_v3_with_control.v" 27 matrix_by_vector_v3_with_control
 ~M 1 "./src/mema.v" 1 memA
 ~A 1 "./src/mema.v" 1 memA
 ~M 1 "./src/memp.v" 1 memP
@@ -107,6 +125,8 @@
 ~A 1 "./src/rkold_prev.v" 1 rKold_prev
 ~M 1 "./src/row_by_vector_module.v" 25 row_by_vector
 ~A 1 "./src/row_by_vector_module.v" 25 row_by_vector
+~M 1 "./src/row_by_vector_with_control.v" 23 row_by_vector_with_control
+~A 1 "./src/row_by_vector_with_control.v" 23 row_by_vector_with_control
 ~M 3 "./src/tb.v" 3 tb
 ~A 1 "./src/tb.v" 3 tb
 ~M 3 "./src/test_bench.v" 23 test_bench
@@ -127,3 +147,5 @@
 ~A 1 "./src/vectorxvector.v" 1 vectorXvector
 ~M 1 "./src/vectorxvector_mxv.v" 1 vectorXvector_mXv
 ~A 1 "./src/vectorxvector_mxv.v" 1 vectorXvector_mXv
+~M 3 "./src/vectorxvector_mxv_with_control.v" 1 vectorXvector_mXv_with_control
+~A 1 "./src/vectorxvector_mxv_with_control.v" 1 vectorXvector_mXv_with_control

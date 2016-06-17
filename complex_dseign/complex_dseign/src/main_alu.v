@@ -4,7 +4,7 @@ module main_alu(clk,reset,reset_vXv1,reset_mXv1,memoryA_output,memoryP_output,pK
 
     parameter number_of_clusters =40;
 	parameter number_of_equations_per_cluster =19;
-	parameter element_width = 32;
+	parameter element_width = 64;
 	parameter memories_address_width=20;   
 	parameter no_of_units = 8; 
 	parameter memory_read_address_width=20;	
@@ -64,7 +64,7 @@ module main_alu(clk,reset,reset_vXv1,reset_mXv1,memoryA_output,memoryP_output,pK
         
 	
 	
-	Alu #(.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
+	complex_Alu #(.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
 	alu(clk,reset,reset_vXv1,reset_mXv1,memoryA_output,memoryP_output,pKold_v2,memoryR_output,memoryX_output,rKold_prev,memoryP_input,memoryR_input,memoryX_input,finish,mXv1_finish,result_mem_we_4,rkold_read_address,result_mem_we_5,result_mem_counter_5,read_again,start,read_again_2,result_mem_we_6,vXv1_finish,finish_all);
 	
 endmodule

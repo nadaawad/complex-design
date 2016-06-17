@@ -95,7 +95,7 @@ begin
 		end
 	else if(!reset) 
 		begin
-			if(ii < total/NI 	&& outsider9)
+			if(ii < total/NI && outsider9)
 				begin
 					package_by_package <= multipliers_output_vector;
 					//@(posedge clk);
@@ -195,7 +195,7 @@ always @(posedge clk)
 				demux_select <= 0;
 				flip2 <= 1;
 			end
-		else if(!reset && (outsider3 || ~flip2))
+		else if(!reset && (outsider7 || ~flip2))
 			begin
 				if(flip2)
 					begin
