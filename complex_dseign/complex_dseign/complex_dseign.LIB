@@ -1,8 +1,8 @@
-timestamp=1466251708383
+timestamp=1466291022996
 
 [$root]
-A/$root=22|""|0|1*8973103
-BinI32/$root=3*6059463
+A/$root=22|""|0|1*9018398
+BinI32/$root=3*6090513
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [AP_total]
@@ -223,9 +223,9 @@ R=./src/complex_adder_subtractor_with_control.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_conjugate]
-A/complex_conjugate=22|./src/complex_conjugate.v|23|1*8609577
-BinI32/complex_conjugate=3*5788025
-P/~emb=385,620,849,994
+A/complex_conjugate=22|./src/complex_conjugate.v|23|1*9012851
+BinI32/complex_conjugate=3*6088891
+P/~emb=153,328,461,525
 R=./src/complex_conjugate.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -237,9 +237,9 @@ R=./src/complex_decoder_with_control.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_division]
-A/complex_division=22|./src/complex_division.v|23|1*8612105
-BinI32/complex_division=3*5788560
-P/~emb=1346,1669,2116,2405
+A/complex_division=22|./src/complex_division.v|23|1*9018916
+BinI32/complex_division=3*6090652
+P/~emb=387,709,1156,1447
 R=./src/complex_division.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -258,9 +258,9 @@ R=./src/complex_matrix_by_vector_v3_with_control.v|24
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_multiply]
-A/complex_multiply=22|./src/complex_multiply.v|23|1*8595469
-BinI32/complex_multiply=3*5785315
-P/~emb=1448,1757,2124,2359
+A/complex_multiply=22|./src/complex_multiply.v|23|1*9007812
+BinI32/complex_multiply=3*6087861
+P/~emb=346,655,1053,1288
 R=./src/complex_multiply.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -454,9 +454,9 @@ R=./src/tb.v|3
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [test_bench]
-A/test_bench=22|./src/test_bench.v|23|1*8579793
-BinI32/test_bench=3*5777000
-P/~emb=529,943,1229,1441
+A/test_bench=22|./src/test_bench.v|23|1*9005513
+BinI32/test_bench=3*6086951
+P/~emb=88,337,541,690
 R=./src/test_bench.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -525,8 +525,8 @@ Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf5
 
 [~A]
 E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/2x1_mux.v_8_dot_product.v_8_organizer.v_8x8_adder.v_a_s.v_adder_subtractor.v_alu.v_ap_total_mem.v_control_unit.v_decoder.v_delay.v_div_nr_wsticky.v_division.v_fp_div.v_fpaddsub_8_23_uid2.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_lzcshifter_28_to_28_counting_32_uid15.v_main_alu.v_matrix_by_vector_v3.v_mema.v_memp.v_memp_v2.v_memr.v_memx.v_multiply.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_rkold_prev.v_row_by_vector_module.v_tb.v_top_module.v_vectorxvector.v_vectorxvector_mxv.v_vxc_add_8.v_vXc_add_8_delay.v_vxc_mul3_add.v_vxc_mul3_sub.v=0*258325*286171
-LastVerilogToplevel=vectorXvector_mXv_with_control
-ModifyID=22340
+LastVerilogToplevel=test_bench
+ModifyID=22588
 Version=73
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/8_dot_product _with_control.v=0*3079196*3081015
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/8_dot_product.v=0*2887646*2889227
@@ -542,11 +542,11 @@ e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseig
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_EightxEight_Adder.v=0*4893396*4894300
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_adder_subtractor.v=0*301284*301963
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_adder_subtractor_with_control.v_complex_Eight_Organizer_with_control.v_complex_vectorXvector.v=0*5800952*5803324
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_conjugate.v=0*2862582*2863286
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_division.v=0*365335*366278
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_conjugate.v=0*5852735*5853279
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_division.v=0*5860824*5861767
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_eight_Dot_Product_Multiply_with_control.v=0*5298153*5300072
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_matrix_by_vector_v3_with_control.v=0*4577620*4579612
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_multiply.v=0*2685720*2686583
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_multiply.v=0*5849781*5850660
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_row_by_vector_with_control.v=0*4122264*4123674
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_row_by_vector_with_control.v_complex_matrix_by_vector_v3_with_control.v=0*5821920*5824765
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_vXc_add_8.v=0*724771*725988
@@ -562,7 +562,7 @@ e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseig
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/matrix_by_vector_v3_with_control.v=0*4132332*4134300
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/memp_v2.v_memr.v=0*751223*752196
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/row_by_vector_with_control.v=0*4104679*4106049
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v=0*941089*941946
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v=0*5846080*5846713
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v_complex_adder_subtractor.v_complex_multiply.v_complex_conjugate.v_complex_division.v_adder_subtractor.v_complex_vXc_add_8.v_complex_vXc_add_8_delay.v_delay.v_vxc_mul3_add.v_vxc_mul3_sub.v_vXc_add_8_delay.v_vxc_add_8.v_multiply.v_division.v_2x1_mux.v_8_dot_product.v_8_organizer.v_8x8_adder.v_a_s.v_alu.v_ap_total_mem.v_control_unit.v_decoder.v_div_nr_wsticky.v_fp_div.v_fpaddsub_8_23_uid2.v_lzcshifter_28_to_28_counting_32_uid15.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_main_alu.v_matrix_by_vector_v3.v_mema.v_memp.v_memp_v2.v_memr.v_memx.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_rkold_prev.v_row_by_vector_module.v_tb.v_top_module.v_vectorxvector.v_vectorxvector_mxv.v=0*2637704*2667390
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v_complex_adder_subtractor.v_complex_multiply.v_complex_conjugate.v_complex_division.v_adder_subtractor.v_complex_vXc_add_8.v_complex_vXc_add_8_delay.v_delay.v_vxc_mul3_add.v_vxc_mul3_sub.v_vXc_add_8_delay.v_vxc_add_8.v_multiply.v_division.v_2x1_mux.v_8_dot_product.v_8_organizer.v_8x8_adder.v_a_s.v_alu.v_ap_total_mem.v_control_unit.v_decoder.v_div_nr_wsticky.v_fp_div.v_fpaddsub_8_23_uid2.v_lzcshifter_28_to_28_counting_32_uid15.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_main_alu.v_matrix_by_vector_v3.v_mema.v_memp.v_memp_v2.v_memr.v_memx.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_rkold_prev.v_row_by_vector_module.v_tb.v_top_module.v_vectorxvector.v_vectorxvector_mxv.v_test_bench2.v=0*2825796*2855720
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/test_bench.v_complex_adder_subtractor.v_complex_multiply.v_complex_conjugate.v_complex_division.v_adder_subtractor.v_complex_vXc_add_8.v_complex_vXc_add_8_delay.v_delay.v_vxc_mul3_add.v_vxc_mul3_sub.v_vXc_add_8_delay.v_vxc_add_8.v_multiply.v_division.v_2x1_mux.v_8_dot_product.v_8_organizer.v_8x8_adder.v_a_s.v_alu.v_ap_total_mem.v_control_unit.v_decoder.v_div_nr_wsticky.v_fp_div.v_fpaddsub_8_23_uid2.v_lzcshifter_28_to_28_counting_32_uid15.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_main_alu.v_matrix_by_vector_v3.v_mema.v_memp.v_memp_v2.v_memr.v_memx.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_rkold_prev.v_row_by_vector_module.v_tb.v_top_module.v_vectorxvector.v_vectorxvector_mxv.v_test_bench2.v_8_dot_product _with_c=0*3033214*3065496
@@ -576,12 +576,12 @@ e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseig
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/vxc_mul3_sub.v=0*5191753*5193237
 
 [~MFT]
-0=2501|0complex_dseign.mgf|5824765|854376
-1=3740|1complex_dseign.mgf|8980153|8606167
-3=3740|3complex_dseign.mgf|6060893|5801983
+0=2567|0complex_dseign.mgf|5861767|869151
+1=3784|1complex_dseign.mgf|9018916|8643818
+3=3784|3complex_dseign.mgf|6090652|5812175
 
 [~U]
-$root=12|0*5813958|
+$root=12|0*5858100|
 AP_total=12|0*5638796||0x80
 Alu=12|0*5624133||0x90
 Eight_Organizer=12|0*5618374||0x80
@@ -613,12 +613,12 @@ complex_N_to_2N_demux_=12|0*3444370||0x90
 complex_TwoxOne_mux=12|0*5736094||0x80
 complex_adder_subtractor=12|0*5571535||0x80
 complex_adder_subtractor_with_control=12|0*5794116||0x80
-complex_conjugate=12|0*5573167||0x80
+complex_conjugate=12|0*5852066||0x80
 complex_decoder_with_control=12|0*5743597||0x80
-complex_division=12|0*5574434||0x80
+complex_division=12|0*5858938||0x80
 complex_eight_Dot_Product_Multiply_with_control=12|0*5724652||0x80
 complex_matrix_by_vector_v3_with_control=12|0*5817655||0x80
-complex_multiply=12|0*5565628||0x80
+complex_multiply=12|0*5848097||0x80
 complex_row_by_vector_with_control=12|0*5814780||0x80
 complex_vXc_add_8=12|0*5581768||0x90
 complex_vXc_add_8_delay=12|0*5584191||0x80
@@ -646,7 +646,7 @@ rKold_prev=12|0*5671619||0x80
 row_by_vector=12|0*5683504||0x80
 row_by_vector_with_control=12|0*5713218||0x80
 tb=12|0*5690855||0x90
-test_bench=12|0*5556427||0x90
+test_bench=12|0*5845151||0x90
 test_bench2=12|0*5696824||0x90
 top_module=12|0*5693253||0x80
 vXc_add_8=12|0*5604184||0x90
