@@ -20,10 +20,11 @@
 `timescale 1 ns / 1 ps
 
 
-module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,controlled_adder_output);
+module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,controlled_adder_output,start);
 
 	input wire[63:0] A,B;
-	input wire clk,op,ce;
+	input wire clk,op,ce; 
+	input start;
 	
 	output wire[63:0] result;
 	
@@ -55,6 +56,8 @@ module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,co
 		begin 
 		if(outsider15==1)
 			previous_value <= result;
+		else if(!start)	
+			previous_value<=64'b0;
 	end	
 
 

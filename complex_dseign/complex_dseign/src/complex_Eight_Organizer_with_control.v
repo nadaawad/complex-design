@@ -59,7 +59,7 @@ wire [element_width-1:0] controlled_adder_output;
 
 complex_TwoxOne_mux m1 (controlled_adder_output,mux_one,mux_output,mux_select);
 complex_EightxEight_Adder A1 (clk,adder_row_input,pre_last_output);
-complex_adder_subtractor_with_control final_adder (mux_output,second_pre_last_output , adder_output, 0,clk,1,outsider15,controlled_adder_output);
+complex_adder_subtractor_with_control final_adder (mux_output,second_pre_last_output , adder_output, 0,clk,1,outsider15,controlled_adder_output,start);
 
 
 always @(posedge clk)

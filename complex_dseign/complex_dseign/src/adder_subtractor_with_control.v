@@ -1,3 +1,4 @@
+
 //-----------------------------------------------------------------------------
 //
 // Title       : adder_subtractor
@@ -22,13 +23,17 @@
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
 //{module {adder_subtractor}}
-module adder_subtractor_with_control (A, B,result,op,clk,ce,outsider15,controlled_adder_output);
+module adder_subtractor_with_control (A, B,result,op,clk,ce,outsider15,controlled_adder_output,start);
 //}} End of automatically maintained section
 
 // -- Enter your statements here -- //
-input A,B;
+input A,B;	
+input start;
 
-wire[31:0] A,B;
+wire[31:0] A,B;	  
+wire [31:0]A_no_neg_zero,B_no_neg_zero;
+assign A_no_neg_zero =(A[30:0]==31'b0)?32'b0:A;
+assign B_no_neg_zero =(B[30:0]==31'b0)?32'b0:B;
 
 input clk ,op,ce;
 output result;	 
@@ -41,8 +46,8 @@ wire [31:0] result;
 wire[33:0] Radd,Rsub;
 wire[33:0] modified_A , modified_B,modified_result ;
 
-InputIEEE_8_23_to_8_23 A1 (.clk(clk),.rst(1'b0),.X(A), .R( modified_A));
-InputIEEE_8_23_to_8_23 A2 (.clk(clk),.rst(1'b0),.X(B), .R( modified_B));
+InputIEEE_8_23_to_8_23 A1 (.clk(clk),.rst(1'b0),.X(A_no_neg_zero), .R( modified_A));
+InputIEEE_8_23_to_8_23 A2 (.clk(clk),.rst(1'b0),.X(B_no_neg_zero), .R( modified_B));
 
 FPAddSub_8_23_uid2 adder(clk,~ce,modified_A ,modified_B, Radd, Rsub); 
 
@@ -56,6 +61,8 @@ always@(posedge clk)
 	begin 
 		if(outsider15==1)
 			previous_value <= result;
+		else if (!start )
+			previous_value <= 32'b0;		
 	end	
 
 endmodule

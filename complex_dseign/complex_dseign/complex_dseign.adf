@@ -51,6 +51,10 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
+[Groups]
+wave.asdbw=1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid=1
+
 [Files]
 /test_bench.v=-1
 /complex_multiply.v=-1
@@ -129,6 +133,23 @@ Selected=
 /complex_vectorXvector_mXv_with_control.v=-1
 /complex_Alu.v=-1
 /complex_vectorXvector.v=-1
+/wave.asdb=-1
+wave.asdbw/strings.data=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/channels.data=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/channels.index=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/current_time=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/global_info=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/names.data=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/names.index=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/pattern_lut=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/ref_counter=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/scratchpad.data=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/scratchpad.index=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/sources=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/status_ok=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/strings.index=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/treeinfo=-1
+wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid/typeinfo=-1
 
 [Files.Data]
 .\src\test_bench.v=Verilog Source Code
@@ -208,4 +229,20 @@ Selected=
 .\src\complex_vectorXvector_mXv_with_control.v=Verilog Source Code
 .\src\complex_Alu.v=Verilog Source Code
 .\src\complex_vectorXvector.v=Verilog Source Code
-
+.\src\wave.asdb=Accelerated Waveform File
+.\src\wave.asdbw\strings.data=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\channels.data=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\channels.index=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\current_time=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\global_info=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\names.data=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\names.index=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\pattern_lut=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\ref_counter=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\scratchpad.data=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\scratchpad.index=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\sources=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\status_ok=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\strings.index=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\treeinfo=External File
+.\src\wave.asdbw\LOCAL___BD1865572CD1B9020E00.sid\typeinfo=External File

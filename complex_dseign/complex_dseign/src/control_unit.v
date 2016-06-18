@@ -389,6 +389,8 @@ module control_unit (clk,reset,finish_alu,memoryP_write_enable,memoryR_write_ena
 							if(counter3==4)	 
 								begin
 									iteration_counter<=iteration_counter+1;
+									if(iteration_counter==5)
+										halt<=1;
 								end
 							end
 						else if(!finish_alu&&!reset)

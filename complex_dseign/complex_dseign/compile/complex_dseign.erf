@@ -1,26 +1,19 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
+UPDATEPROGRESS 17
 UPDATEPROGRESS 35
 MESSAGE_SP VCP2113 "Module complex_multiply found in current working library."
 MESSAGE_SP VCP2113 "Module multiply found in current working library."
 MESSAGE_SP VCP2113 "Module adder_subtractor found in current working library."
-MESSAGE_SP VCP2113 "Module complex_N_to_2N_demux found in current working library."
-MESSAGE_SP VCP2113 "Module complex_Eight_Organizer_with_control found in current working library."
-MESSAGE_SP VCP2113 "Module complex_TwoxOne_mux found in current working library."
-MESSAGE_SP VCP2113 "Module complex_EightxEight_Adder found in current working library."
-MESSAGE_SP VCP2113 "Module complex_adder_subtractor_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_adder_subtractor found in current working library."
+MESSAGE_SP VCP2113 "Module complex_decoder_with_control found in current working library."
 MESSAGE_SP VCP2113 "Module multiply found in current working library."
 MESSAGE_SP VCP2113 "Module InputIEEE_8_23_to_8_23 found in current working library."
 MESSAGE_SP VCP2113 "Module FPMultiplier_8_23_8_23_8_23_uid2 found in current working library."
 MESSAGE_SP VCP2113 "Module OutputIEEE_8_23_to_8_23 found in current working library."
-MESSAGE_SP VCP2113 "Module complex_adder_subtractor_with_control found in current working library."
-MESSAGE_SP VCP2113 "Module complex_TwoxOne_mux found in current working library."
 MESSAGE_SP VCP2113 "Module adder_subtractor found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2 found in current working library."
-MESSAGE_SP VCP2113 "Module complex_EightxEight_Adder found in current working library."
-MESSAGE_SP VCP2113 "Module complex_adder_subtractor found in current working library."
-MESSAGE_SP VCP2113 "Module complex_adder_subtractor found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2 found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2_RightShifter found in current working library."
 MESSAGE_SP VCP2113 "Module IntAdder_27_f180_uid7 found in current working library."
@@ -55,6 +48,7 @@ MESSAGE_SP VCP2113 "Module test_bench2 found in current working library."
 MESSAGE_SP VCP2113 "Module complex_N_to_2N_demux_ found in current working library."
 MESSAGE_SP VCP2113 "Module vectorXvector_mXv_with_control found in current working library."
 MESSAGE_SP VCP2113 "Module matrix_by_vector_v3_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module Alu found in current working library."
 UPDATEPROGRESS 81
 UPDATEPROGRESS 82
 UPDATEPROGRESS 83
@@ -73,8 +67,8 @@ UPDATEPROGRESS 95
 UPDATEPROGRESS 96
 UPDATEPROGRESS 97
 UPDATEPROGRESS 98
-UPDATEPROGRESS 99
-MESSAGE "$root top modules: tb test_bench vXc_add_8_delay vXc_add_8 complex_vXc_add_8 test_bench2 complex_N_to_2N_demux_ vectorXvector_mXv_with_control matrix_by_vector_v3_with_control."
+UPDATEPROGRESS 100
+MESSAGE "$root top modules: tb test_bench vXc_add_8_delay vXc_add_8 complex_vXc_add_8 test_bench2 complex_N_to_2N_demux_ vectorXvector_mXv_with_control matrix_by_vector_v3_with_control Alu."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 MESSAGE "done"
