@@ -40,7 +40,7 @@ module complex_multiply (A,B,clk,ce,result);
 	assign A_imj=A[31:0];
 	assign B_real=B[63:32];
 	assign B_imj=B[31:0];
-	assign result=(r1ximj2[31]==r2ximj1[31])?{result_real,pip2}:{result_real,result_imj};	   
+	assign result={result_real,pip2};	   
 	
 	multiply m1(A_real,B_real,clk,ce,r1Xr2);
 	multiply m2(A_imj,B_imj, clk, ce,imj1ximj2);
@@ -52,7 +52,7 @@ module complex_multiply (A,B,clk,ce,result);
 	
 	always @(posedge clk)
 		begin
-			pip1<=result_imj;	 // elmafrod a7ot condition hena law l most siginifigant btA3 1 r1ximj2,r2ximj1 zay ba3d yd5ol hena bs
+			pip1<=result_imj;
 			pip2<=pip1;
 			
 		end

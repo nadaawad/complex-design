@@ -33,8 +33,6 @@ wire [63:0] four_five_sum;
 wire[63:0] six_seven_sum;
 wire[63:0] zero_to_three_sum;
 wire [63:0] four_to_seven_sum;
-////assign z_o_s=(inputs[63:0][63]==inputs[127:64][127]&&inputs[63:0][31]==inputs[127:64][95])? zero_one_sum:pip02;
-////assign t_t_s=()
 
 //stage
  														   
