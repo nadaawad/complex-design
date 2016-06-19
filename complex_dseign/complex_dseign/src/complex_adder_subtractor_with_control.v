@@ -27,10 +27,10 @@ module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,co
 	input start;
 	
 	output wire[63:0] result;
-	
-	wire[31:0] A_real,A_imj,B_real,B_imj;
-	wire[31:0]result_real,result_imj;  
-	
+//	
+//	wire[31:0] A_real,A_imj,B_real,B_imj;
+//	wire[31:0]result_real,result_imj;  
+//	
 	input wire outsider15;
 
 	output wire [63:0] controlled_adder_output;	
@@ -39,14 +39,17 @@ module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,co
 
 	
 	
-	assign A_real=A[63:32];
-	assign A_imj=A[31:0];
-	assign B_real=B[63:32];
-	assign B_imj=B[31:0];
-	assign result={result_real,result_imj};
-	
-	adder_subtractor real_part(A_real,B_real,result_real,op,clk,ce);
-	adder_subtractor imj_part(A_imj,B_imj,result_imj,op,clk,ce);   
+	//assign A_real=A[63:32];
+//	assign A_imj=A[31:0];
+//	assign B_real=B[63:32];
+//	assign B_imj=B[31:0];
+//	assign result={result_real,result_imj};
+//	
+//	adder_subtractor real_part(A_real,B_real,result_real,op,clk,ce);
+//	adder_subtractor imj_part(A_imj,B_imj,result_imj,op,clk,ce); 
+
+
+   complex_adder_subtractor CA (A,B,result,op,clk,ce);
 	
 	
 	assign controlled_adder_output = outsider15?result:previous_value;
