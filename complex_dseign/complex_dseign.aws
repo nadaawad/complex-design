@@ -4,7 +4,7 @@ Version=9.1
 complex_dseign=.\complex_dseign\complex_dseign.adf
 [Browser]
 sort=order
-mode=none
+mode=desc
 [Order]
 order=1
 macro=

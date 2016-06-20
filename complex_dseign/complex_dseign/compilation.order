@@ -15,10 +15,10 @@
 .\src\division.v
 .\src\2x1_mux.v
 .\src\8_dot_product.v
-.\src\8_organizer.v
 .\src\8x8_adder.v
 .\src\a_s.v
 .\src\alu.v
+.\src\8_organizer.v
 .\src\ap_total_mem.v
 .\src\control_unit.v
 .\src\decoder.v
@@ -69,3 +69,13 @@
 .\src\complex_vectorXvector_mXv_with_control.v
 .\src\complex_Alu.v
 .\src\complex_vectorXvector.v
+.\src\conjugate_complex_multiply.v
+.\src\conjugate_complex_eight_Dot_Product_Multiply_with_control.v
+.\src\conjugate_conjugate_complex_multiply.v
+.\src\conjugate_complex_vXc_add_8_delay.v
+.\src\conjugate_conjugate_complex_vXc_add_8_delay.v
+.\src\conjugate_conjugate_vXc_mul3_sub.v
+.\src\conjugate_vXc_mul3_add.v
+.\src\memRR.v
+.\src\memPP_v2.v
+.\src\conjugate_complex_vectorXvector.v

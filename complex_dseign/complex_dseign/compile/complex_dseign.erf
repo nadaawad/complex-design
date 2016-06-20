@@ -2,20 +2,73 @@ MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
 UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module vXc_mul3_sub found in current working library."
+MESSAGE_SP VCP2113 "Module complex_vXc_add_8_delay found in current working library."
+MESSAGE_SP VCP2113 "Module complex_vectorXvector found in current working library."
+MESSAGE_SP VCP2113 "Module complex_eight_Dot_Product_Multiply_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_matrix_by_vector_v3_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_decoder_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module AP_total found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_vXc_mul3_add found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_complex_vXc_add_8_delay found in current working library."
+MESSAGE_SP VCP2113 "Module complex_division found in current working library."
+MESSAGE_SP VCP2113 "Module complex_conjugate found in current working library."
+MESSAGE_SP VCP2113 "Module complex_multiply found in current working library."
+MESSAGE_SP VCP2113 "Module FP_div found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_complex_vectorXvector found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_complex_eight_Dot_Product_Multiply_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_vectorXvector_mXv_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module vXc_mul3_add found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_complex_vXc_add_8_delay found in current working library."
+MESSAGE_SP VCP2113 "Module complex_conjugate found in current working library."
+MESSAGE_SP VCP2113 "Module complex_decoder_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_multiply found in current working library."
+MESSAGE_SP VCP2113 "Module multiply found in current working library."
 MESSAGE_SP VCP2113 "Module adder_subtractor found in current working library."
+MESSAGE_SP VCP2113 "Module FP_div found in current working library."
+MESSAGE_SP VCP2113 "Module div_nr_wsticky found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_complex_eight_Dot_Product_Multiply_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_N_to_2N_demux found in current working library."
+MESSAGE_SP VCP2113 "Module complex_Eight_Organizer_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_vXc_add_8_delay found in current working library."
+MESSAGE_SP VCP2113 "Module complex_eight_Dot_Product_Multiply_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module multiply found in current working library."
 MESSAGE_SP VCP2113 "Module InputIEEE_8_23_to_8_23 found in current working library."
+MESSAGE_SP VCP2113 "Module FPMultiplier_8_23_8_23_8_23_uid2 found in current working library."
+MESSAGE_SP VCP2113 "Module OutputIEEE_8_23_to_8_23 found in current working library."
+MESSAGE_SP VCP2113 "Module adder_subtractor found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2 found in current working library."
+MESSAGE_SP VCP2113 "Module complex_N_to_2N_demux found in current working library."
+MESSAGE_SP VCP2113 "Module div_nr_wsticky found in current working library."
+MESSAGE_SP VCP2113 "Module complex_Eight_Organizer_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_TwoxOne_mux found in current working library."
+MESSAGE_SP VCP2113 "Module complex_EightxEight_Adder found in current working library."
+MESSAGE_SP VCP2113 "Module complex_adder_subtractor_with_control found in current working library."
+MESSAGE_SP VCP2113 "Module complex_adder_subtractor_with_control found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2 found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2_RightShifter found in current working library."
 MESSAGE_SP VCP2113 "Module IntAdder_27_f180_uid7 found in current working library."
 MESSAGE_SP VCP2113 "Module LZCShifter_28_to_28_counting_32_uid15 found in current working library."
 MESSAGE_SP VCP2113 "Module IntAdder_34_f180_uid18 found in current working library."
+MESSAGE_SP VCP2113 "Module FPMultiplier_8_23_8_23_8_23_uid2 found in current working library."
+MESSAGE_SP VCP2113 "Module IntMultiplier_UsingDSP_24_24_48_unsigned_uid4 found in current working library."
+MESSAGE_SP VCP2113 "Module IntAdder_33_f300_uid23 found in current working library."
+MESSAGE_SP VCP2113 "Module complex_TwoxOne_mux found in current working library."
 MESSAGE_SP VCP2113 "Module InputIEEE_8_23_to_8_23 found in current working library."
+MESSAGE_SP VCP2113 "Module OutputIEEE_8_23_to_8_23 found in current working library."
+MESSAGE_SP VCP2113 "Module complex_EightxEight_Adder found in current working library."
+MESSAGE_SP VCP2113 "Module complex_adder_subtractor found in current working library."
+MESSAGE_SP VCP2113 "Module IntAdder_33_f300_uid23 found in current working library."
+MESSAGE_SP VCP2113 "Module complex_adder_subtractor found in current working library."
 MESSAGE_SP VCP2113 "Module IntAdder_34_f180_uid18 found in current working library."
 MESSAGE_SP VCP2113 "Module LZCShifter_28_to_28_counting_32_uid15 found in current working library."
 MESSAGE_SP VCP2113 "Module IntAdder_27_f180_uid7 found in current working library."
+MESSAGE_SP VCP2113 "Module IntMultiplier_UsingDSP_24_24_48_unsigned_uid4 found in current working library."
+MESSAGE_SP VCP2113 "Module IntAdder_42_f300_uid15 found in current working library."
 MESSAGE_SP VCP2113 "Module FPAddSub_8_23_uid2_RightShifter found in current working library."
+MESSAGE_SP VCP2113 "Module IntAdder_42_f300_uid15 found in current working library."
 MESSAGE "Pass 2. Processing instantiations."
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol mXv1_finish has not been declared in module complex_Alu." "e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_Alu.v" 153 1
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
 UPDATEPROGRESS 80
@@ -32,16 +85,27 @@ MESSAGE_SP VCP2113 "Module complex_N_to_2N_demux_ found in current working libra
 MESSAGE_SP VCP2113 "Module vectorXvector_mXv_with_control found in current working library."
 MESSAGE_SP VCP2113 "Module matrix_by_vector_v3_with_control found in current working library."
 MESSAGE_SP VCP2113 "Module Alu found in current working library."
+MESSAGE_SP VCP2113 "Module conjugate_conjugate_vXc_mul3_sub found in current working library."
+UPDATEPROGRESS 81
 UPDATEPROGRESS 82
+UPDATEPROGRESS 83
 UPDATEPROGRESS 84
+UPDATEPROGRESS 85
 UPDATEPROGRESS 86
+UPDATEPROGRESS 87
 UPDATEPROGRESS 88
+UPDATEPROGRESS 89
+UPDATEPROGRESS 90
 UPDATEPROGRESS 91
+UPDATEPROGRESS 92
 UPDATEPROGRESS 93
+UPDATEPROGRESS 94
 UPDATEPROGRESS 95
+UPDATEPROGRESS 96
 UPDATEPROGRESS 97
-UPDATEPROGRESS 100
-MESSAGE "$root top modules: tb test_bench vXc_add_8_delay vXc_add_8 complex_vXc_add_8 test_bench2 complex_N_to_2N_demux_ vectorXvector_mXv_with_control matrix_by_vector_v3_with_control Alu."
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+MESSAGE "$root top modules: tb test_bench vXc_add_8_delay vXc_add_8 complex_vXc_add_8 test_bench2 complex_N_to_2N_demux_ vectorXvector_mXv_with_control matrix_by_vector_v3_with_control Alu conjugate_conjugate_vXc_mul3_sub."
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
 MESSAGE "done"

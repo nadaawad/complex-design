@@ -20,7 +20,7 @@
 `timescale 1 ns / 1 ps
 
  `define tolerance 32'h283424DC
-module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xKold,rKold_prev,memoryP_input,memoryR_input,memoryX_input,mul_add3_finish,outsider_read_now,result_mem_we_4,rkold_read_address,result_mem_we_5,result_mem_counter_5,read_again,start,read_again_2,result_mem_we_6,vXv1_finish,finish_all);
+module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,ppKold_v2,rKold,rrKold,xKold,rKold_prev,rrKold_prev,memoryP_input,memoryPP_input,memoryR_input,memoryRR_input,memoryX_input,mul_add3_finish,outsider_read_now,result_mem_we_4,rkold_read_address,result_mem_we_5,result_mem_counter_5,read_again,start,read_again_2,result_mem_we_6,vXv1_finish,finish_all);
 	
 	parameter number_of_equations_per_cluster=10;
 	parameter element_width_modified=34;
@@ -29,6 +29,7 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	parameter number_of_clusters=1;
 	parameter additional = no_of_units-(number_of_equations_per_cluster%no_of_units); 
 	parameter total = number_of_equations_per_cluster+additional ; 
+	parameter bnorm =  64'h388288bb00000000;
 	
 	
 	input wire clk,reset;
@@ -36,8 +37,11 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
  
     input [element_width*(3* number_of_equations_per_cluster-2*2+2)-1:0] matA; 
 	input [element_width*number_of_equations_per_cluster-1:0] pKold;
-	input [element_width*no_of_units-1:0] rKold;
-	input [element_width*no_of_units-1:0] pKold_v2; 
+	input [element_width*no_of_units-1:0] rKold; 
+	input [element_width*no_of_units-1:0] rrKold;
+	input [element_width*no_of_units-1:0] pKold_v2;
+	input [element_width*no_of_units-1:0] ppKold_v2;
+	
 	input [element_width*no_of_units-1:0] xKold;
 	
 	
@@ -45,6 +49,7 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
     input wire reset_vXv1;
 	input wire reset_mXv1;	  
 	input wire[element_width*no_of_units-1:0] rKold_prev; 
+	input wire[element_width*no_of_units-1:0] rrKold_prev;
 	
 	
 	
@@ -56,10 +61,13 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	
 	
 
-    output wire [element_width*no_of_units-1:0]memoryR_input;
+    output wire [element_width*no_of_units-1:0]memoryR_input; 
+	output wire [element_width*no_of_units-1:0]memoryRR_input;
 	
 	output wire [element_width*no_of_units-1:0] memoryX_input;	
+	
 	output wire [element_width*no_of_units-1:0] memoryP_input;
+	output wire [element_width*no_of_units-1:0] memoryPP_input;
 	
 	output wire result_mem_we_4; 
 	output wire read_again; 
@@ -80,12 +88,16 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	
 
     wire[element_width-1:0]div1_result;
-	wire[element_width-1:0]div2_result;
+	wire[element_width-1:0]div2_result;	
+	wire[element_width-1:0]div_tol_result;	
+	wire[element_width-1:0]beta;
 	
-	wire vXv3_finish;
+	wire vXv3_finish; 
+	wire vXv33_finish;
 	wire vXv2_finish;
 	wire div1_finish;  
 	wire div2_finish;
+	wire div_tol_finish;
 	wire mul_add1_finish;
 	wire mul_add2_finish;
 	
@@ -95,6 +107,7 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	wire [element_width*no_of_units-1:0] AP_total;  
 	wire[31:0]counter;
 	wire[31:0] AP_read_address ; 
+	wire [31:0] read_address;
 	 
 	 
 	 
@@ -108,13 +121,14 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	reg outsider_read;
 	reg outsider_read2;	
 	reg flag;
-	
+	reg [31:0] AP_counter; 
 	
 	integer outsider_counter=0;
 	integer outsider_counter2=0;
 	
 
-	
+	assign read_address=(!mul_add2_finish)? AP_read_address:
+	                     (AP_counter)    ? AP_counter:32'b0;             
 	
 	
 	
@@ -126,8 +140,8 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	
 	
 	
-	complex_vectorXvector#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
-	vXv1 (clk,reset_vXv1,rKold,rKold,vXv1_result,vXv1_finish,outsider_read);	///edit outsider
+	conjugate_complex_vectorXvector#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
+	vXv1 (clk,reset_vXv1,rrKold,rKold,vXv1_result,vXv1_finish,outsider_read);	///edit outsider
 	
 	
 	
@@ -143,11 +157,11 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	
  
 	AP_total#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
-	AP_total_mem(clk,mXv1_result,counter,AP_read_address,outsider_read_now/*AP_total_we*/,AP_total);
+	AP_total_mem(clk,mXv1_result,counter,read_address,outsider_read_now/*AP_total_we*/,AP_total);
 
 	
 	complex_vectorXvector_mXv_with_control #(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
-	vXv2(clk,!mXv1_finish,pKold_v2,mXv1_result,vXv2_result,vXv2_finish,AP_total_we,counter,outsider_read_now);
+	vXv2(clk,!mXv1_finish,ppKold_v2,mXv1_result,vXv2_result,vXv2_finish,AP_total_we,counter,outsider_read_now);
 	
 	
 	
@@ -171,22 +185,55 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 	
 	
 	
-	//rsnew	, third stage 
+	vXc_mul3_sub #(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
+	mul_add22(clk,!start_mul_add,AP_total,div1_result,rrKold_prev,1'b1,mul_add2_finish,AP_read_address,rkold_read_address,result_mem_we_5,result_mem_counter_5,memoryRR_input);
 	
+	
+	//<rk+1.AP>	, third stage 
 	
 	complex_vectorXvector#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
 	vXv3 (clk,!start,rKold,rKold,vXv3_result,vXv3_finish,outsider_read2);
 	
-	//rsnew/rsold
-	complex_division div2( clk ,(start_div2),rnew,rold ,div2_result ,div2_finish );
+	complex_vectorXvector#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
+	vXv33 (clk,!start,AP_total,rKold,vXv3_result,vXv33_finish,outsider_read2); 
 	
+	complex_division div_tol (clk ,(start_div2),vXv3_result,bnorm ,div_tol_result ,div_tol_finish);
 	
-	//r+(rsnew/rsold)*p
+	//Beta
+	complex_division div2( clk ,(start_div2),vXv3_result,vXv2_result ,div2_result ,div2_finish );
+	 assign beta=div2_result^64'h10000000;
+	
+	//r+beta.p
+	//r+beta*.PP
 	
 	vXc_mul3_add #(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
-	mul_add3(clk,!mul_add3_start,pKold_v2,div2_result,rKold,1'b0,mul_add3_finish,result_mem_we_6,memoryP_input,read_again_2); //module da m7tag tzbeet l finish
+	mul_add3(clk,!mul_add3_start,pKold_v2,beta,rKold,1'b0,mul_add3_finish,result_mem_we_6,memoryP_input,read_again_2); //module da m7tag tzbeet l finish
 	
-	  
+	conjugate_vXc_mul3_add #(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
+	mul_add33(clk,!mul_add3_start,ppKold_v2,beta,rrKold,1'b0,mul_add3_finish,result_mem_we_6,memoryPP_input,read_again_2); //module da m7tag tzbeet l finish
+	
+		 
+		
+		always @(posedge clk)
+			begin 
+				
+			if(reset||mul_add3_finish)
+				begin
+				AP_counter<=0;
+				//read_address<=0;
+				end
+			
+			
+			
+			else if(outsider_read2)
+				begin
+					//read_address<=AP_counter;
+					 AP_counter<=AP_counter+1;
+				end
+				
+			end
+		
+		
 	
 		always @(posedge clk)
 			begin
@@ -266,11 +313,35 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 			
 	
 		
+		//always@(posedge clk)
+//		begin
+//			if(!reset&&div2_finish)
+//	
+//				mul_add3_start<=div2_finish;
+//			else
+//				mul_add3_start<=0;
+//	
+//		end	
+		
+		
 		always@(posedge clk)
-		begin
-			if(!reset&&div2_finish)
+		begin 
+			if(reset)
+				mul_add3_start<=0; 
+			
+			else if(!reset&&div_tol_result<=`tolerance)
+				begin
+					mul_add3_start<=0; 
+					finish_all<=1;
+					//mul_add3_start<=div2_finish;
+					
+				end
+			
+			else if(!reset&&div_tol_finish)
 	
-				mul_add3_start<=div2_finish;
+				mul_add3_start<=div_tol_finish;
+			
+			
 			else
 				mul_add3_start<=0;
 	
@@ -281,32 +352,55 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 		
 		
 	
-	always@(posedge clk)
+	//always@(posedge clk)
+//		begin 
+//			if(reset||mul_add3_finish)
+//				begin
+//					finish_all<=0;
+//					rnew_finish_flag<=0;   
+//					rold_finish_flag<=0; 
+//					start_div2<=0;
+//				end
+//			else if(!reset&&!rold_finish_flag&&vXv1_finish)
+//			begin
+//				rold_finish_flag<=1;     need to be zero lma abda2 iteration gdeda
+//				rold<= vXv1_result;
+//			end
+//			
+//			else if(!reset&&!rnew_finish_flag&&vXv3_finish)
+//				begin
+//					if(vXv3_result<=`tolerance)  tolerance 
+//						begin
+//						finish_all<=1;	
+//						end
+//					
+//				else
+//					begin
+//					rnew<=vXv3_result;
+//					rnew_finish_flag<=1;   need to be zero lma abda2 iteration gdeda
+//					
+//					@(posedge clk);
+//					start_div2<=1;
+//					
+//					end
+//					
+//				end	
+//				end	
+
+
+
+
+always@(posedge clk)
 		begin 
 			if(reset||mul_add3_finish)
 				begin
-					finish_all<=0;
-					rnew_finish_flag<=0;   
-					rold_finish_flag<=0; 
+					
 					start_div2<=0;
 				end
-			else if(!reset&&!rold_finish_flag&&vXv1_finish)
-			begin
-				rold_finish_flag<=1;    // need to be zero lma abda2 iteration gdeda
-				rold<= vXv1_result;
-			end
+
 			
-			else if(!reset&&!rnew_finish_flag&&vXv3_finish)
+			else if(!reset&&vXv3_finish)
 				begin
-					if(vXv3_result<=`tolerance)  //tolerance 
-						begin
-						finish_all<=1;	
-						end
-					
-				else
-					begin
-					rnew<=vXv3_result;
-					rnew_finish_flag<=1;  // need to be zero lma abda2 iteration gdeda
 					
 					@(posedge clk);
 					start_div2<=1;
@@ -314,7 +408,10 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,rKold,xK
 					end
 					
 				end	
-				end
+			 
+
+
+
 
 
 endmodule

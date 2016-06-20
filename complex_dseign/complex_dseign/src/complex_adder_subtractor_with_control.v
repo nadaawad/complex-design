@@ -46,7 +46,10 @@ module complex_adder_subtractor_with_control (A,B,result,op,clk,ce,outsider15,co
 	assign result={result_real,result_imj};
 	
 	adder_subtractor real_part(A_real,B_real,result_real,op,clk,ce);
-	adder_subtractor imj_part(A_imj,B_imj,result_imj,op,clk,ce);   
+	adder_subtractor imj_part(A_imj,B_imj,result_imj,op,clk,ce); 
+
+
+   //complex_adder_subtractor CA (A,B,result,op,clk,ce);
 	
 	
 	assign controlled_adder_output = outsider15?result:previous_value;

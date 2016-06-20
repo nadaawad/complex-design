@@ -1,66 +1,73 @@
-Active-HDL 9.1.2353.4205  2016-06-19 15:25:50
+Active-HDL 9.1.2353.4205  2016-06-20 12:26:34
 
 Elaboration top modules:
 Verilog Module                tb
 
 
----------------------------------------------------------------------------------------------------------------------------
-Verilog Module                                  | Library        | Info | Compiler Version         | Compilation Options
----------------------------------------------------------------------------------------------------------------------------
-tb                                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-top_module                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-main_alu                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-control_unit                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-memP                                            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-memP_v2                                         | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-memR                                            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-memA                                            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-memX                                            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-rKold_prev                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_Alu                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_vectorXvector                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_matrix_by_vector_v3_with_control        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-AP_total                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_vectorXvector_mXv_with_control          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_division                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-vXc_mul3_add                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-vXc_mul3_sub                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_eight_Dot_Product_Multiply_with_control | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_N_to_2N_demux                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_Eight_Organizer_with_control            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_multiply                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-multiply                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-adder_subtractor                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-InputIEEE_8_23_to_8_23                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FPMultiplier_8_23_8_23_8_23_uid2                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-OutputIEEE_8_23_to_8_23                         | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntMultiplier_UsingDSP_24_24_48_unsigned_uid4   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_33_f300_uid23                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_42_f300_uid15                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FPAddSub_8_23_uid2                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FPAddSub_8_23_uid2_RightShifter                 | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_27_f180_uid7                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-LZCShifter_28_to_28_counting_32_uid15           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_34_f180_uid18                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_TwoxOne_mux                             | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_EightxEight_Adder                       | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_adder_subtractor_with_control           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_adder_subtractor                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_decoder_with_control                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_row_by_vector_with_control              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_conjugate                               | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FP_div                                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-div_nr_wsticky                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-a_s                                             | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-complex_vXc_add_8_delay                         | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-delay                                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+Verilog Module                                            | Library        | Info | Compiler Version         | Compilation Options
+-------------------------------------------------------------------------------------------------------------------------------------
+tb                                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+top_module                                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+main_alu                                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+control_unit                                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memP                                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memP_v2                                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memPP_v2                                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memR                                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memRR                                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memA                                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+memX                                                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+rKold_prev                                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_Alu                                               | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+conjugate_complex_vectorXvector                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_matrix_by_vector_v3_with_control                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+AP_total                                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_vectorXvector_mXv_with_control                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_division                                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+vXc_mul3_add                                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+vXc_mul3_sub                                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_vectorXvector                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+conjugate_vXc_mul3_add                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+conjugate_complex_eight_Dot_Product_Multiply_with_control | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_N_to_2N_demux                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_Eight_Organizer_with_control                      | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+conjugate_complex_multiply                                | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_conjugate                                         | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+multiply                                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+adder_subtractor                                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+InputIEEE_8_23_to_8_23                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+FPMultiplier_8_23_8_23_8_23_uid2                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+OutputIEEE_8_23_to_8_23                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+IntMultiplier_UsingDSP_24_24_48_unsigned_uid4             | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+IntAdder_33_f300_uid23                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+IntAdder_42_f300_uid15                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+FPAddSub_8_23_uid2                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+FPAddSub_8_23_uid2_RightShifter                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+IntAdder_27_f180_uid7                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+LZCShifter_28_to_28_counting_32_uid15                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+IntAdder_34_f180_uid18                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_TwoxOne_mux                                       | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_EightxEight_Adder                                 | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_adder_subtractor_with_control                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_adder_subtractor                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_decoder_with_control                              | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_row_by_vector_with_control                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_multiply                                          | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_eight_Dot_Product_Multiply_with_control           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+FP_div                                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+div_nr_wsticky                                            | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+a_s                                                       | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+complex_vXc_add_8_delay                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+delay                                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+conjugate_complex_vXc_add_8_delay                         | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+-------------------------------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------------------
-Library                                         | Comment
----------------------------------------------------------------------------------------------------------------------------
-complex_dseign                                  | None
----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+Library                                                   | Comment
+-------------------------------------------------------------------------------------------------------------------------------------
+complex_dseign                                            | None
+-------------------------------------------------------------------------------------------------------------------------------------
 
 
 Simulation Options: asim -advdataflow -O5 +access +r +m+tb tb

@@ -69,3 +69,13 @@ i<>.\src\complex_matrix_by_vector_v3_with_control.v
 i<>.\src\complex_vectorXvector_mXv_with_control.v
 i<>.\src\complex_Alu.v
 i<>.\src\complex_vectorXvector.v
+i<>.\src\conjugate_complex_multiply.v
+i<>.\src\conjugate_complex_eight_Dot_Product_Multiply_with_control.v
+i<>.\src\conjugate_conjugate_complex_multiply.v
+i<>.\src\conjugate_complex_vXc_add_8_delay.v
+i<>.\src\conjugate_conjugate_complex_vXc_add_8_delay.v
+i<>.\src\conjugate_conjugate_vXc_mul3_sub.v
+i<>.\src\conjugate_vXc_mul3_add.v
+i<>.\src\memRR.v
+i<>.\src\memPP_v2.v
+i<>.\src\conjugate_complex_vectorXvector.v

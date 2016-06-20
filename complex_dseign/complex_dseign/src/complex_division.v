@@ -41,7 +41,7 @@ module complex_division(clk,start,A,B,result,finish_flag);
 	
 	assign result={result_real,result_imj};	 
 	
-	complex_conjugate cc (B,clk,den_conj); 
+	complex_conjugate cc (B,den_conj); 
 	
 	complex_multiply cm1 (A,den_conj,clk,'b1,new_num); 
 	complex_multiply cm2 (B,den_conj,clk,1'b1,new_den);
@@ -66,13 +66,13 @@ module complex_division(clk,start,A,B,result,finish_flag);
 		         end
 		
 				
-			else if(start&&count<11) 
+			else if(start&&count<7) 
 				begin
 					count<= count+1;
 					
 				end
 				
-			else if(start&&count==11)
+			else if(start&&count==7)
 				begin
 					finish_flag <= 1; 
 				
