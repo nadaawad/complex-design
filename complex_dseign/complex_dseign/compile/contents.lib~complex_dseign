@@ -1,4 +1,4 @@
-34354
+35346
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
@@ -93,7 +93,7 @@
 ~A 1 "./src/conjugate_complex_multiply.v" 23 conjugate_complex_multiply
 ~M 1 "./src/conjugate_complex_vXc_add_8_delay.v" 23 conjugate_complex_vXc_add_8_delay
 ~A 1 "./src/conjugate_complex_vXc_add_8_delay.v" 23 conjugate_complex_vXc_add_8_delay
-~M 3 "./src/conjugate_complex_vectorXvector.v" 23 conjugate_complex_vectorXvector
+~M 1 "./src/conjugate_complex_vectorXvector.v" 23 conjugate_complex_vectorXvector
 ~A 1 "./src/conjugate_complex_vectorXvector.v" 23 conjugate_complex_vectorXvector
 ~M 1 "./src/conjugate_conjugate_complex_multiply.v" 23 conjugate_conjugate_complex_multiply
 ~A 1 "./src/conjugate_conjugate_complex_multiply.v" 23 conjugate_conjugate_complex_multiply
@@ -101,7 +101,7 @@
 ~A 1 "./src/conjugate_conjugate_complex_vXc_add_8_delay.v" 23 conjugate_conjugate_complex_vXc_add_8_delay
 ~M 3 "./src/conjugate_conjugate_vXc_mul3_sub.v" 23 conjugate_conjugate_vXc_mul3_sub
 ~A 1 "./src/conjugate_conjugate_vXc_mul3_sub.v" 23 conjugate_conjugate_vXc_mul3_sub
-~M 3 "./src/conjugate_vXc_mul3_add.v" 23 conjugate_vXc_mul3_add
+~M 1 "./src/conjugate_vXc_mul3_add.v" 23 conjugate_vXc_mul3_add
 ~A 1 "./src/conjugate_vXc_mul3_add.v" 23 conjugate_vXc_mul3_add
 ~M 1 "./src/control_unit.v" 2 control_unit
 ~A 1 "./src/control_unit.v" 2 control_unit
