@@ -1,4 +1,4 @@
-35346
+36485
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
@@ -41,8 +41,8 @@
 ~A 1 "./src/2x1_mux.v" 1 TwoxOne_mux
 ~M 1 "./src/a_s.v" 17 a_s
 ~A 1 "./src/a_s.v" 17 a_s
-~M 1 "./src/adder_subtractor.v" 26 adder_subtractor
-~A 1 "./src/adder_subtractor.v" 26 adder_subtractor
+~M 1 "./src/adder_subtractor.v" 24 adder_subtractor
+~A 1 "./src/adder_subtractor.v" 24 adder_subtractor
 ~M 1 "./src/adder_subtractor_with_control.v" 26 adder_subtractor_with_control
 ~A 1 "./src/adder_subtractor_with_control.v" 26 adder_subtractor_with_control
 ~M 1 "./src/complex_vectorXvector.v" 25 compelx_vectorXvector
@@ -119,8 +119,16 @@
 ~A 1 "./src/8_dot_product.v" 2 eight_Dot_Product_Multiply
 ~M 1 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
 ~A 1 "./src/8_dot_product _with_control.v" 2 eight_Dot_Product_Multiply_with_control
+~M 1 "./src/final.v" 15 final
+~A 1 "./src/final.v" 15 final
+~M 1 "./src/fpadd.v" 23 fpadd
+~A 1 "./src/fpadd.v" 23 fpadd
+~M 1 "./src/fpalign.v" 17 fpalign
+~A 1 "./src/fpalign.v" 17 fpalign
 ~M 1 "./src/main_alu.v" 2 main_alu
 ~A 1 "./src/main_alu.v" 2 main_alu
+~M 1 "./src/mantadd.v" 18 mantadd
+~A 1 "./src/mantadd.v" 18 mantadd
 ~M 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
 ~A 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
 ~M 3 "./src/matrix_by_vector_v3_with_control.v" 27 matrix_by_vector_v3_with_control
@@ -141,12 +149,18 @@
 ~A 1 "./src/memx.v" 1 memX
 ~M 1 "./src/multiply.v" 25 multiply
 ~A 1 "./src/multiply.v" 25 multiply
+~M 1 "./src/normlize.v" 17 normlize
+~A 1 "./src/normlize.v" 17 normlize
 ~M 1 "./src/rkold_prev.v" 1 rKold_prev
 ~A 1 "./src/rkold_prev.v" 1 rKold_prev
+~M 1 "./src/rounder.v" 16 rounder
+~A 1 "./src/rounder.v" 16 rounder
 ~M 1 "./src/row_by_vector_module.v" 25 row_by_vector
 ~A 1 "./src/row_by_vector_module.v" 25 row_by_vector
 ~M 1 "./src/row_by_vector_with_control.v" 23 row_by_vector_with_control
 ~A 1 "./src/row_by_vector_with_control.v" 23 row_by_vector_with_control
+~M 1 "./src/special.v" 13 special
+~A 1 "./src/special.v" 13 special
 ~M 3 "./src/tb.v" 3 tb
 ~A 1 "./src/tb.v" 3 tb
 ~M 3 "./src/test_bench.v" 23 test_bench

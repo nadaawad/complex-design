@@ -34,7 +34,7 @@ module conjugate_complex_multiply (A,B,clk,ce,result);
 	wire[31:0] r1Xr2,imj1ximj2,r1ximj2,r2ximj1;	
 	wire[63:0]A_conj;
 	
-	reg [31:0] pip1,pip2; 
+	
 	
 	complex_conjugate c (A,A_conj);
 	
@@ -42,7 +42,7 @@ module conjugate_complex_multiply (A,B,clk,ce,result);
 	assign A_imj=A_conj[31:0];
 	assign B_real=B[63:32];
 	assign B_imj=B[31:0];
-	assign result=(r1ximj2[31]==r2ximj1[31])?{result_real,pip2}:{result_real,result_imj};	   
+	assign result={result_real,result_imj};	   
 	
 	multiply m1(A_real,B_real,clk,ce,r1Xr2);
 	multiply m2(A_imj,B_imj, clk, ce,imj1ximj2);
@@ -52,12 +52,6 @@ module conjugate_complex_multiply (A,B,clk,ce,result);
 	adder_subtractor sub (r1Xr2,imj1ximj2,result_real,1'b1,clk,ce); 
 	adder_subtractor add (r1ximj2,r2ximj1,result_imj,1'b0,clk,ce);	
 	
-	always @(posedge clk)
-		begin
-			pip1<=result_imj;	 // elmafrod a7ot condition hena law l most siginifigant btA3 1 r1ximj2,r2ximj1 zay ba3d yd5ol hena bs
-			pip2<=pip1;
-			
-		end
-
+	
 
 endmodule

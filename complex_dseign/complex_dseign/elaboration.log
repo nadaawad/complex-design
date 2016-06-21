@@ -1,4 +1,4 @@
-Active-HDL 9.1.2353.4205  2016-06-20 12:41:08
+Active-HDL 9.1.2353.4205  2016-06-21 14:32:19
 
 Elaboration top modules:
 Verilog Module                tb
@@ -42,11 +42,13 @@ OutputIEEE_8_23_to_8_23                                   | complex_dseign |    
 IntMultiplier_UsingDSP_24_24_48_unsigned_uid4             | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
 IntAdder_33_f300_uid23                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
 IntAdder_42_f300_uid15                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FPAddSub_8_23_uid2                                        | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-FPAddSub_8_23_uid2_RightShifter                           | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_27_f180_uid7                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-LZCShifter_28_to_28_counting_32_uid15                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
-IntAdder_34_f180_uid18                                    | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+fpadd                                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+fpalign                                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+mantadd                                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+normlize                                                  | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+rounder                                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+special                                                   | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
+final                                                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
 complex_TwoxOne_mux                                       | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
 complex_EightxEight_Adder                                 | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
 complex_adder_subtractor_with_control                     | complex_dseign |      | 9.1.2353.4205  (Windows) | -l complex_dseign -O2
@@ -68,3 +70,7 @@ Library                                                   | Comment
 -------------------------------------------------------------------------------------------------------------------------------------
 complex_dseign                                            | None
 -------------------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -advdataflow -O5 +access +r +m+tb tb
+

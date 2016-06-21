@@ -1,17 +1,19 @@
 [Files List]
 E:\Vlib\std/src/standard.vhd=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/intadder_34_f180_uid18.v=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/lzcshifter_28_to_28_counting_32_uid15.v=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/intadder_27_f180_uid7.v=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/fpaddsub_8_23_uid2_rightshifter.v=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/inputieee_8_23_to_8_23.v=S
-e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/fpaddsub_8_23_uid2.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/final.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/special.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/rounder.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/normlize.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/mantadd.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/fpalign.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/fpadd.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/adder_subtractor.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/intadder_42_f300_uid15.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/intadder_33_f300_uid23.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/intmultiplier_usingdsp_24_24_48_unsigned_uid4.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/outputieee_8_23_to_8_23.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/fpmultiplier_8_23_8_23_8_23_uid2.v=S
+e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/inputieee_8_23_to_8_23.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/multiply.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/complex_conjugate.v=S
 e:\4th computer\graduation projects new design\complex_design_14_6\complex_dseign\complex_dseign/src/complex_adder_subtractor.v=S
