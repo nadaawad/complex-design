@@ -107,7 +107,8 @@ endgenerate
 
 always@(posedge clk) begin
 	if(reset)
-	begin	
+	begin
+		
 		i<=0;	
 		initialization_counter <=0;
 		start_row_by_vector <=0;

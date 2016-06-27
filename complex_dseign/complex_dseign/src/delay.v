@@ -50,9 +50,10 @@
 		pip1<=in;
 		pip2<=pip1;
 		pip3<=pip2;
-		pip4<=pip3;
-		pip5<=pip4;
-		out<=pip5;
+		//pip4<=pip3;
+		//pip5<=pip4;
+		//out<=pip5;
+		out<=pip3;
 		 
 	 end
 	

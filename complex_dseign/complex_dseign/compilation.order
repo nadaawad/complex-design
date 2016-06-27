@@ -58,12 +58,12 @@
 .\src\vectorxvector.v
 .\src\vectorxvector_mxv.v
 .\src\test_bench2.v
-.\src\8_dot_product _with_control.v
 .\src\8_organizer_with_control.v
 .\src\adder_subtractor_with_control.v
 .\src\decoder_with_control.v
 .\src\row_by_vector_with_control.v
 .\src\matrix_by_vector_v3_with_control.v
+.\src\8_dot_product _with_control.v
 .\src\vectorxvector_mxv_with_control.v
 .\src\complex_eight_Dot_Product_Multiply_with_control.v
 .\src\complex_EightxEight_Adder.v

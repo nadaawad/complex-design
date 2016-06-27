@@ -83,7 +83,8 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,ppKold_v
 	
 	wire [element_width-1:0]vXv1_result;
 	wire [element_width-1:0]vXv2_result;
-	wire [element_width-1:0]vXv3_result;
+	wire [element_width-1:0]vXv3_result; 
+	wire [element_width-1:0]vXv33_result;
 	wire [element_width*no_of_units-1:0]mXv1_result;
 	
 
@@ -195,7 +196,7 @@ module complex_Alu (clk,reset,reset_vXv1,reset_mXv1,matA,pKold,pKold_v2,ppKold_v
 	vXv3 (clk,!start,rKold,rKold,vXv3_result,vXv3_finish,outsider_read2);
 	
 	complex_vectorXvector#(.no_of_units(no_of_units),.number_of_clusters(number_of_clusters),.number_of_equations_per_cluster(number_of_equations_per_cluster),.element_width (element_width ))
-	vXv33 (clk,!start,AP_total,rKold,vXv3_result,vXv33_finish,outsider_read2); 
+	vXv33 (clk,!start,AP_total,rKold,vXv33_result,vXv33_finish,outsider_read2); 
 	
 	complex_division div_tol (clk ,(start_div2),vXv3_result,bnorm ,div_tol_result ,div_tol_finish);
 	

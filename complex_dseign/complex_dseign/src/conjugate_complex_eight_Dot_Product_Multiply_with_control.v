@@ -80,7 +80,7 @@ end
 endgenerate
 
 
-complex_Eight_Organizer_with_control #(.NI(NI)) E_O (clk,package_by_package,adder_tree_start , adder_output,outsider8,outsider15);
+complex_Eight_Organizer_with_control #(.NI(NI)) E_O (clk,package_by_package,adder_tree_start , adder_output,outsider6,outsider15);
 
 
 
@@ -95,7 +95,7 @@ begin
 		end
 	else if(!reset) 
 		begin
-			if(ii < total/NI && outsider9)
+			if(ii < total/NI && outsider7)
 				begin
 					package_by_package <= multipliers_output_vector;
 					//@(posedge clk);
@@ -195,7 +195,7 @@ always @(posedge clk)
 				demux_select <= 0;
 				flip2 <= 1;
 			end
-		else if(!reset && (outsider7 || ~flip2))
+		else if(!reset && (outsider5 || ~flip2))
 			begin
 				if(flip2)
 					begin

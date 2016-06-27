@@ -44,7 +44,7 @@ parameter NOE = 19;
 	reg[element_width*NI-1:0] inputs_by_inputs;
 	wire [element_width*NI-1:0] mul_result;
 	output wire [element_width*NI-1:0] result;
-	wire [element_width-1:0] adder_input[0:NI-1];
+	wire [element_width*NI-1:0] adder_input;
 	
 	genvar j ;
 	generate
@@ -53,8 +53,8 @@ parameter NOE = 19;
 		begin : instantiate_Multiplier
 			complex_multiply m (first_row_input[element_width*(NI-j)-1-:element_width],constant, clk, 1, mul_result[element_width*(NI-j)-1-:element_width]);
 			//complex_multiply m2 (second_row_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width],64'h3f80000000000000,clk,1,adder_input[j]);
-			delay d(clk,second_row_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width],adder_input[j]);
-			complex_adder_subtractor adder(adder_input[j],mul_result[element_width*(NI-j)-1:element_width*(NI-j)-element_width] ,result[element_width*(NI-j)-1:element_width*(NI-j)-element_width],op,clk,1'b1);
+			delay d(clk,second_row_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width],adder_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width]);
+			complex_adder_subtractor adder(adder_input[element_width*(NI-j)-1:element_width*(NI-j)-element_width],mul_result[element_width*(NI-j)-1:element_width*(NI-j)-element_width] ,result[element_width*(NI-j)-1:element_width*(NI-j)-element_width],op,clk,1'b1);
 		end	
 		endgenerate
 

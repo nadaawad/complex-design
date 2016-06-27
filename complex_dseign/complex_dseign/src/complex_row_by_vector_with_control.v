@@ -126,7 +126,7 @@ always @(posedge clk)
 			pipeline8 <= pipeline7;
 			
 			//decoder_read_now <= pipeline5;
-			decoder_read_now <= pipeline8;
+			decoder_read_now <= pipeline6;
 			
 		end	
 	
