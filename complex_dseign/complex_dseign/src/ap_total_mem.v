@@ -1,19 +1,16 @@
 module AP_total (clk, input_data,address,read_address,write_enable,memory_output);
 	
-	parameter number_of_clusters = 1;
-	parameter number_of_equations_per_cluster = 9;
+	
 	parameter element_width = 64;
-	parameter address_width = 20;
-	parameter memories_address_width=20;
+	parameter memories_address_width=32;
 	parameter no_of_units=8;
-	parameter additional = no_of_units-(number_of_equations_per_cluster%no_of_units); 
-	parameter total = number_of_equations_per_cluster+additional ;
+	
 	
 	input wire clk;
 	input wire write_enable;
 	input wire [element_width*no_of_units-1:0] input_data;
-	input wire[31:0] address;
-	input wire [31:0] read_address;
+	input wire[memories_address_width-1:0] address;
+	input wire [memories_address_width-1:0] read_address;
 	
 
 	output wire [element_width*no_of_units-1:0] memory_output;
