@@ -1,8 +1,8 @@
-timestamp=1467126998367
+timestamp=1467219697710
 
 [$root]
-A/$root=22|""|0|1*23933757
-BinI32/$root=3*16591236
+A/$root=22|""|0|1*24111868
+BinI32/$root=3*16781859
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [AP_total]
@@ -139,9 +139,9 @@ R=./src/outputieee_8_23_to_8_23.v|24
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [P_Emap_8]
-A/P_Emap_8=22|./src/p_emap_8.v|5|1*23681352
-BinI32/P_Emap_8=3*16404600
-P/~emb=810,1419,2892,3335
+A/P_Emap_8=22|./src/p_emap_8.v|5|1*24093420
+BinI32/P_Emap_8=3*16740641
+P/~emb=810,1419,2889,3332
 R=./src/p_emap_8.v|5
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -195,9 +195,9 @@ R=./src/complex_vectorXvector.v|25
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_Alu]
-A/complex_Alu=22|./src/c_alu.v|4|1*23876905
-BinI32/complex_Alu=3*16545033
-P/~emb=3182,4442,6190,7226
+A/complex_Alu=22|./src/c_alu.v|4|1*24112482
+BinI32/complex_Alu=3*16781998
+P/~emb=3182,4442,6187,7223
 R=./src/c_alu.v|4
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -300,16 +300,16 @@ R=./src/c_division.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_eight_Dot_Product_Multiply_with_control]
-A/complex_eight_Dot_Product_Multiply_with_control=22|./src/c_8_dot_product_multiply_with_control.v|2|1*23727099
-BinI32/complex_eight_Dot_Product_Multiply_with_control=3*16441069
-P/~emb=1029,1689,2731,3359
+A/complex_eight_Dot_Product_Multiply_with_control=22|./src/c_8_dot_product_multiply_with_control.v|2|1*24067394
+BinI32/complex_eight_Dot_Product_Multiply_with_control=3*16697031
+P/~emb=761,1421,2425,3020
 R=./src/c_8_dot_product_multiply_with_control.v|2
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_eight_Dot_Product_Multiply_with_control_row]
-A/complex_eight_Dot_Product_Multiply_with_control_row=22|./src/c_8_dot_product_multiply_with_control_row.v|2|1*23934355
-BinI32/complex_eight_Dot_Product_Multiply_with_control_row=3*16591375
-P/~emb=965,1827,3357,4197
+A/complex_eight_Dot_Product_Multiply_with_control_row=22|./src/c_8_dot_product_multiply_with_control_row.v|2|1*24083432
+BinI32/complex_eight_Dot_Product_Multiply_with_control_row=3*16725763
+P/~emb=966,1828,3308,4117
 R=./src/c_8_dot_product_multiply_with_control_row.v|2
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -342,9 +342,9 @@ R=./src/complex_vXc_add_8.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [complex_vXc_add_8_delay]
-A/complex_vXc_add_8_delay=22|./src/c_vxc_add_8_delay.v|23|1*23494440
-BinI32/complex_vXc_add_8_delay=3*16289617
-P/~emb=618,1054,1643,2054
+A/complex_vXc_add_8_delay=22|./src/c_vxc_add_8_delay.v|23|1*24007798
+BinI32/complex_vXc_add_8_delay=3*16647016
+P/~emb=618,1057,1653,2064
 R=./src/c_vxc_add_8_delay.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -377,9 +377,9 @@ R=./src/c_vectorxvector_with_control.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [conjugate_complex_eight_Dot_Product_Multiply_with_control]
-A/conjugate_complex_eight_Dot_Product_Multiply_with_control=22|./src/c_c_8_dot_product_multiply_with_control.v|2|1*23804071
-BinI32/conjugate_complex_eight_Dot_Product_Multiply_with_control=3*16501634
-P/~emb=1049,1723,2766,3394
+A/conjugate_complex_eight_Dot_Product_Multiply_with_control=22|./src/c_c_8_dot_product_multiply_with_control.v|2|1*24075386
+BinI32/conjugate_complex_eight_Dot_Product_Multiply_with_control=3*16711405
+P/~emb=781,1455,2459,3054
 R=./src/c_c_8_dot_product_multiply_with_control.v|2
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -391,9 +391,9 @@ R=./src/c_c_multiply.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [conjugate_complex_vXc_add_8_delay]
-A/conjugate_complex_vXc_add_8_delay=22|./src/c_c_vxc_add_8_delay.v|23|1*23825602
-BinI32/conjugate_complex_vXc_add_8_delay=3*16520610
-P/~emb=638,1085,1691,2102
+A/conjugate_complex_vXc_add_8_delay=22|./src/c_c_vxc_add_8_delay.v|23|1*24002572
+BinI32/conjugate_complex_vXc_add_8_delay=3*16642810
+P/~emb=638,1088,1701,2112
 R=./src/c_c_vxc_add_8_delay.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -426,9 +426,9 @@ R=./src/c_c_c_multiply.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [conjugate_conjugate_complex_vXc_add_8_delay]
-A/conjugate_conjugate_complex_vXc_add_8_delay=22|./src/c_c_c_vxc_add_8_delay.v|23|1*23821001
-BinI32/conjugate_conjugate_complex_vXc_add_8_delay=3*16516890
-P/~emb=572,996,1547,1957
+A/conjugate_conjugate_complex_vXc_add_8_delay=22|./src/c_c_c_vxc_add_8_delay.v|23|1*24012757
+BinI32/conjugate_conjugate_complex_vXc_add_8_delay=3*16651211
+P/~emb=572,999,1558,1968
 R=./src/c_c_c_vxc_add_8_delay.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -447,9 +447,9 @@ R=./src/c_vXc_mul3_add.v|23
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [control_unit]
-A/control_unit=22|./src/control_unit.v|2|1*23926281
-BinI32/control_unit=3*16586817
-P/~emb=1960,2555,3846,4346
+A/control_unit=22|./src/control_unit.v|2|1*24048561
+BinI32/control_unit=3*16677127
+P/~emb=1960,2555,3822,4304
 R=./src/control_unit.v|2
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -552,9 +552,9 @@ R=./src/c_matrix_by_vector_v3_with_control.v|7
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
 [memA]
-A/memA=22|./src/mema.v|1|1*23646772
-BinI32/memA=3*16372648
-P/~emb=773,1274,2468,2758
+A/memA=22|./src/mema.v|1|1*24104119
+BinI32/memA=3*16764836
+P/~emb=773,1274,2456,2746
 R=./src/mema.v|1
 Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf53d0f5370200536a0759
 
@@ -749,8 +749,8 @@ Version=9.1.2353.4205  (Windows)|00000015789cd3cd5148cecf2dc849ad884f294ecd4ccf5
 
 [~A]
 E:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/2x1_mux.v_8_dot_product.v_8_organizer.v_8x8_adder.v_a_s.v_adder_subtractor.v_alu.v_ap_total_mem.v_control_unit.v_decoder.v_delay.v_div_nr_wsticky.v_division.v_fp_div.v_fpaddsub_8_23_uid2.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_lzcshifter_28_to_28_counting_32_uid15.v_main_alu.v_matrix_by_vector_v3.v_mema.v_memp.v_memp_v2.v_memr.v_memx.v_multiply.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_rkold_prev.v_row_by_vector_module.v_tb.v_top_module.v_vectorxvector.v_vectorxvector_mxv.v_vxc_add_8.v_vXc_add_8_delay.v_vxc_mul3_add.v_vxc_mul3_sub.v=0*258325*286171
-LastVerilogToplevel=control_unit
-ModifyID=56626
+LastVerilogToplevel=complex_Alu
+ModifyID=56991
 Version=73
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/8_dot_product _with_control.v=0*3079196*3081015
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/8_dot_product.v=0*2887646*2889227
@@ -765,17 +765,20 @@ e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseig
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/alu.v=0*8481378*8483525
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/ap_total_mem.v_rkold_prev.v_main_alu.v=0*4860738*4862438
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control.v=0*11281119*11283076
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control_row.v=0*15543869*15546550
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control.v_c_c_8_dot_product_multiply_with_control.v_c_8_dot_product_multiply_with_control_row.v_p_emap_8.v_mema.v=0*15674860*15681081
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control_row.v=0*15646503*15649184
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control_row.v_c_row_by_vector_with_control.v=0*13383359*13386663
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control_row.v_control_unit.v=0*15530727*15535199
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_dot_product_multiply_with_control_row.v_control_unit.v=0*15633345*15637817
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_organizer_with_control_row.v=0*11287977*11289094
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_8_organizer_with_control_row.v_c_8_dot_product_multiply_with_control_row.v=0*14614627*14617933
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_adder_subtractor_with_control_with_start.v=0*13216539*13217540
-e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_alu.v=0*15491214*15494659
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_alu.v=0*15692774*15696187
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_alu.v_control_unit.v=0*15163122*15168214
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_c_8_dot_product_multiply_with_control.v=0*11272398*11274373
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_c_c_multiply.v_c_c_c_vxc_add_8_delay.v=0*14298785*14300423
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_c_vectorxvector_mxv_with_control.v=0*11527795*11529013
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_c_vxc_add_8_delay.v_c_vxc_add_8_delay.v=0*15578845*15580276
+e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_c_vxc_add_8_delay.v_c_vxc_add_8_delay.v_c_c_c_vxc_add_8_delay.v=0*15602787*15604290
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_matrix_by_vector_v3_with_control.v=0*13227596*13229438
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/c_row_by_vector_with_control.v=0*13367731*13368927
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/complex_Alu.v=0*10266162*10268957
@@ -833,12 +836,12 @@ e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseig
 e:/4th computer/graduation projects new design/complex_design_14_6/complex_dseign/complex_dseign/src/vxc_mul3_sub.v=0*5191753*5193237
 
 [~MFT]
-0=5850|0complex_dseign.mgf|15546550|2475606
-1=9458|1complex_dseign.mgf|23934355|23413792
-3=9458|3complex_dseign.mgf|16591375|16226876
+0=5915|0complex_dseign.mgf|15696187|2500266
+1=9520|1complex_dseign.mgf|24112482|23602126
+3=9520|3complex_dseign.mgf|16781998|16409138
 
 [~U]
-$root=12|0*15535855|
+$root=12|0*15681854|
 AP_total=12|0*15367303||0x80
 Alu=12|0*10351929||0x90
 Eight_Organizer=12|0*10347106||0x80
@@ -858,7 +861,7 @@ IntMultiplier_UsingDSP_24_24_48_unsigned_uid4=12|0*15269900||0x80
 LZCShifter_28_to_28_counting_32_uid15=12|0*15263494||0x80
 N_to_2N_demux=12|0*10346054||0x80
 OutputIEEE_8_23_to_8_23=12|0*15307262||0x80
-P_Emap_8=12|0*15315833||0x80
+P_Emap_8=12|0*15666052||0x90
 TwoxOne_mux=12|0*10341817||0x80
 a_s=12|0*10351002||0x80
 adder_subtractor=12|0*15237512||0x80
@@ -866,7 +869,7 @@ adder_subtractor_with_control=12|0*10451136||0x80
 adder_subtractor_with_start=12|0*15327066||0x80
 col_nos=12|0*15324023||0x80
 compelx_vectorXvector=12|0*5260831||0x80
-complex_Alu=12|0*15482572||0x90
+complex_Alu=12|0*15684150||0x90
 complex_Eight_Organizer_with_control=12|0*15355933||0x90
 complex_Eight_Organizer_with_control_row=12|0*15345839||0x80
 complex_EightxEight_Adder=12|0*15329312||0x80
@@ -881,28 +884,28 @@ complex_adder_subtractor_with_start=12|0*15336968||0x80
 complex_conjugate=12|0*15382412||0x80
 complex_decoder_with_control=12|0*15396273||0x80
 complex_division=12|0*15371615||0x80
-complex_eight_Dot_Product_Multiply_with_control=12|0*15338666||0x80
-complex_eight_Dot_Product_Multiply_with_control_row=12|0*15538039||0x80
+complex_eight_Dot_Product_Multiply_with_control=12|0*15652201||0x80
+complex_eight_Dot_Product_Multiply_with_control_row=12|0*15660357||0x80
 complex_matrix_by_vector_v3_with_control=12|0*15363225||0x80
 complex_multiply=12|0*15344217||0x80
 complex_row_by_vector_with_control=12|0*15397903||0x80
 complex_vXc_add_8=12|0*10315691||0x90
-complex_vXc_add_8_delay=12|0*15232050||0x80
+complex_vXc_add_8_delay=12|0*15597757||0x80
 complex_vXc_mul3_sub=12|0*934094||0x80
 complex_vectorXvector=12|0*10494466||0x80
 complex_vectorXvector_mXv_with_control=12|0*15400713||0x90
 complex_vectorXvector_with_control=12|0*15376951||0x80
-conjugate_complex_eight_Dot_Product_Multiply_with_control=12|0*15383082||0x80
+conjugate_complex_eight_Dot_Product_Multiply_with_control=12|0*15656257||0x90
 conjugate_complex_multiply=12|0*15387583||0x80
-conjugate_complex_vXc_add_8_delay=12|0*15393668||0x80
+conjugate_complex_vXc_add_8_delay=12|0*15595142||0x90
 conjugate_complex_vectorXvector=12|0*10491323||0x80
 conjugate_complex_vectorXvector_mXv_with_control=12|0*15368749||0x80
 conjugate_complex_vectorXvector_with_control=12|0*15360679||0x80
 conjugate_conjugate_complex_multiply=12|0*15389345||0x80
-conjugate_conjugate_complex_vXc_add_8_delay=12|0*15391206||0x80
+conjugate_conjugate_complex_vXc_add_8_delay=12|0*15600314||0x90
 conjugate_conjugate_vXc_mul3_sub=12|0*15373758||0x80
 conjugate_vXc_mul3_add=12|0*15379406||0x80
-control_unit=12|0*15525153||0x90
+control_unit=12|0*15627840||0x90
 decoder=12|0*10376756||0x80
 decoder_with_control=12|0*10452672||0x80
 delay=12|0*10320657||0x80
@@ -917,7 +920,7 @@ main_alu=12|0*15280661||0x80
 mantadd=12|0*15219468||0x80
 matrix_by_vector_v3=12|0*10362299||0x80
 matrix_by_vector_v3_with_control=12|0*11943241||0x90
-memA=12|0*15300036||0x80
+memA=12|0*15670984||0x90
 memP=12|0*10425229||0x80
 memPP_v2=12|0*15320778||0x80
 memP_v2=12|0*15303976||0x80

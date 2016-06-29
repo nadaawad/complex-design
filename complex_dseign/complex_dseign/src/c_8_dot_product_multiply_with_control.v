@@ -27,7 +27,8 @@ input wire[element_width*no_of_units-1:0] second_row_input;
 
 
 
-output reg I_am_ready;
+output wire I_am_ready;
+
 
 
 reg save = 0;
@@ -82,21 +83,6 @@ always @(posedge clk)
 
 	end
 
-always @(negedge clk)
-	begin
-		if(outsider1)
-			begin
-							
-			I_am_ready <=1;
-
-			end
-
-		else 
-			begin
-				I_am_ready <=0;
-			end
-
-	end
 
 				  
 

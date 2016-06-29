@@ -76,12 +76,7 @@ module control_unit (total,clk,reset,finish_alu,memories_pre_preprocess,memoryP_
 	
 	
 	
-	always @(posedge clk)
-		begin
-			if(reset)
-			
-				halt<=0;
-		end
+	
 	
 				
 								
@@ -376,6 +371,7 @@ module control_unit (total,clk,reset,finish_alu,memories_pre_preprocess,memoryP_
 						begin
 							counter3<=0;
 							iteration_counter<=0;
+							halt<=0;
 							
 						end
 						

@@ -141,7 +141,7 @@ module complex_Alu (total,clk,reset,reset_vXv1,reset_mXv1,memA_output,Emap_mem_o
 	
 	
 	
-	//vector by vector (r*r)
+	//vector by vector <rr.r>
 	
 	
 	
@@ -210,7 +210,7 @@ module complex_Alu (total,clk,reset,reset_vXv1,reset_mXv1,memA_output,Emap_mem_o
 	
 	//Beta= -(<rk+1.AP>/<PP.AP>)
 	complex_division div2( clk ,(start_div2),vXv33_result,vXv2_result ,div2_result ,div2_finish );
-	 assign beta=div2_result^64'h1000000010000000;
+	 assign beta=div2_result^64'h8000000080000000;
 	
 	//r+beta.p
 	
@@ -279,7 +279,7 @@ module complex_Alu (total,clk,reset,reset_vXv1,reset_mXv1,memA_output,Emap_mem_o
 				begin
 						if(!vxv1_first_time)
 							begin
-									@(vxv1_I_am_ready);
+									//@(vxv1_I_am_ready);
 									outsider_read<=1;
 									outsider_counter<=outsider_counter+1;
 									@(posedge clk);

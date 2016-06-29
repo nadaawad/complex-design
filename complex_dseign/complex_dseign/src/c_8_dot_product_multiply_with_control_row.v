@@ -33,7 +33,9 @@ input wire[element_width*no_of_units-1:0] first_row_input;
 input wire[element_width*no_of_units-1:0] second_row_input;
 
 
-output reg I_am_ready;
+output wire I_am_ready;
+
+
 
 
 reg save = 0;
@@ -97,21 +99,6 @@ initialization_counter <= 1;
 end
 
 
-always @(negedge clk)
-	begin
-		if(outsider1)
-			begin			
-				
-					
-					I_am_ready <=1;
-				
-			end
-		else 
-			begin
-				I_am_ready <=0;
-			end
-
-	end
 
 				  
 
@@ -159,9 +146,8 @@ always@(posedge clk)
 
 always @(posedge clk)
 	begin 
-		if(main_reset)
-		 begin initialization_counter <=1;end
-		else if(reset )
+		
+		if(reset )
 			begin
 				fifo_write_address <= (fifo_write_address +1)%10 ;
 				fifo_write_enable<=1;	
@@ -176,7 +162,11 @@ always @(posedge clk)
 
 always @(posedge clk)
 	begin
-		if(reset_pip2 && initialization_counter)
+	
+	if(main_reset)
+		 begin initialization_counter <=1;end
+		
+	else if(reset_pip2 && initialization_counter)
 		begin
 				delayed_no_of_multiples <=fifo_output_data;
 				fifo_read_address <= (fifo_read_address +1)%10;

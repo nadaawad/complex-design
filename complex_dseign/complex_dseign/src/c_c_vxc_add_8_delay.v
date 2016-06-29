@@ -72,7 +72,7 @@ parameter NOE = 19;
 									begin
 										if(op==0)
 											begin
-												if(counter==8)
+												if(counter==6)
 													begin
 														finish<=1;
 														counter<=0;
@@ -85,7 +85,7 @@ parameter NOE = 19;
 												
 												else if(op==1)
 													begin
-														if(counter==8)
+														if(counter==6)
 															begin
 																finish<=1;
 																counter<=0;

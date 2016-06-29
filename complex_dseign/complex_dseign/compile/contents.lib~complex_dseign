@@ -1,4 +1,4 @@
-56626
+56991
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "./src/ap_total_mem.v" 1 AP_total
@@ -39,7 +39,7 @@
 ~A 1 "./src/n_to_2n_demux.v" 1 N_to_2N_demux
 ~M 1 "./src/outputieee_8_23_to_8_23.v" 24 OutputIEEE_8_23_to_8_23
 ~A 1 "./src/outputieee_8_23_to_8_23.v" 24 OutputIEEE_8_23_to_8_23
-~M 1 "./src/p_emap_8.v" 5 P_Emap_8
+~M 3 "./src/p_emap_8.v" 5 P_Emap_8
 ~A 1 "./src/p_emap_8.v" 5 P_Emap_8
 ~M 1 "./src/2x1_mux.v" 1 TwoxOne_mux
 ~A 1 "./src/2x1_mux.v" 1 TwoxOne_mux
@@ -107,11 +107,11 @@
 ~A 1 "./src/c_vectorxvector_mxv_with_control.v" 23 complex_vectorXvector_mXv_with_control
 ~M 1 "./src/c_vectorxvector_with_control.v" 23 complex_vectorXvector_with_control
 ~A 1 "./src/c_vectorxvector_with_control.v" 23 complex_vectorXvector_with_control
-~M 1 "./src/c_c_8_dot_product_multiply_with_control.v" 2 conjugate_complex_eight_Dot_Product_Multiply_with_control
+~M 3 "./src/c_c_8_dot_product_multiply_with_control.v" 2 conjugate_complex_eight_Dot_Product_Multiply_with_control
 ~A 1 "./src/c_c_8_dot_product_multiply_with_control.v" 2 conjugate_complex_eight_Dot_Product_Multiply_with_control
 ~M 1 "./src/c_c_multiply.v" 23 conjugate_complex_multiply
 ~A 1 "./src/c_c_multiply.v" 23 conjugate_complex_multiply
-~M 1 "./src/c_c_vxc_add_8_delay.v" 23 conjugate_complex_vXc_add_8_delay
+~M 3 "./src/c_c_vxc_add_8_delay.v" 23 conjugate_complex_vXc_add_8_delay
 ~A 1 "./src/c_c_vxc_add_8_delay.v" 23 conjugate_complex_vXc_add_8_delay
 ~M 1 "./src/conjugate_complex_vectorXvector.v" 23 conjugate_complex_vectorXvector
 ~A 1 "./src/conjugate_complex_vectorXvector.v" 23 conjugate_complex_vectorXvector
@@ -121,7 +121,7 @@
 ~A 1 "./src/c_c_vectorxvector_with_control.v" 23 conjugate_complex_vectorXvector_with_control
 ~M 1 "./src/c_c_c_multiply.v" 23 conjugate_conjugate_complex_multiply
 ~A 1 "./src/c_c_c_multiply.v" 23 conjugate_conjugate_complex_multiply
-~M 1 "./src/c_c_c_vxc_add_8_delay.v" 23 conjugate_conjugate_complex_vXc_add_8_delay
+~M 3 "./src/c_c_c_vxc_add_8_delay.v" 23 conjugate_conjugate_complex_vXc_add_8_delay
 ~A 1 "./src/c_c_c_vxc_add_8_delay.v" 23 conjugate_conjugate_complex_vXc_add_8_delay
 ~M 1 "./src/c_c_vxc_mul3_sub.v" 23 conjugate_conjugate_vXc_mul3_sub
 ~A 1 "./src/c_c_vxc_mul3_sub.v" 23 conjugate_conjugate_vXc_mul3_sub
@@ -157,7 +157,7 @@
 ~A 1 "./src/matrix_by_vector_v3.v" 27 matrix_by_vector_v3
 ~M 3 "./src/c_matrix_by_vector_v3_with_control.v" 7 matrix_by_vector_v3_with_control
 ~A 1 "./src/c_matrix_by_vector_v3_with_control.v" 7 matrix_by_vector_v3_with_control
-~M 1 "./src/mema.v" 1 memA
+~M 3 "./src/mema.v" 1 memA
 ~A 1 "./src/mema.v" 1 memA
 ~M 1 "./src/memp.v" 1 memP
 ~A 1 "./src/memp.v" 1 memP

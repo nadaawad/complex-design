@@ -72,7 +72,7 @@ module conjugate_conjugate_complex_vXc_add_8_delay(clk,reset ,first_row_input,co
 									begin
 										if(op==0)
 											begin
-												if(counter==8)
+												if(counter==6)
 													begin
 														finish<=1;
 														counter<=0;
@@ -85,7 +85,7 @@ module conjugate_conjugate_complex_vXc_add_8_delay(clk,reset ,first_row_input,co
 												
 												else if(op==1)
 													begin
-														if(counter==8)
+														if(counter==6)
 															begin
 																finish<=1;
 																counter<=0;
